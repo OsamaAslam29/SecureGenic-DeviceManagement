@@ -1,35 +1,82 @@
-  
-    .navbar{
-        width: 100%;
-        height: 60px;
+  // **************** CSS of Navbar *********
+  .navbar {
+      width: 100%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0rem 1.9rem;
+      background: #fff;
+      border-bottom: 1px solid #219bd063;
+      position: relative;
+
+      .logo img {
+          display: flex;
+          height: 43px;
+      }
+
+      .login_button {
+          display: flex;
+          gap: 0.4rem;
+          align-items: center;
+      }
+
+      .login_button img {
+          height: 30px;
+      }
+
+      .login_button span {
+          font-size: 20px;
+      }
+
+      @media screen and (max-width: 990px) {
+
+          .login_button img,
+          span {
+              display: none;
+          }
+      }
+  }
+
+  // **************** CSS of HameBurger *********
+  .hameburger{
+    display: none;
+   }
+  .main {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      color: #1f2235;
+      cursor: pointer;
+
+      .close {
+          color: gray;
+          padding-bottom: 1rem;
+      }
+
+      .nav{
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        padding: 0rem 1.9rem;
-        background: #fff;
-        border-bottom: 1px solid #219bd063;
+        gap: .5rem;
 
-            .logo img{
-                display: flex;
-                height: 43px;
-            }
-            .login_button{
-                display: flex;
-                gap: 0.4rem;
-                align-items: center;
-            }
-            .login_button img{
-                height: 30px;
-            }
-            .login_button span{
-                font-size: 20px;
+    }
 
-             }
-            
-
-    @media screen and (max-width: 990px){
-    .login_button img,span{
-        display: none;
-     }
-    }      
+      .nav a {
+          text-decoration: none;
+          color: #1A142C;
+          font-weight: 400;
+          font-size: 15px;
+          text-transform: capitalize;
+      }
+      .nav:hover {
+        color: #028cc9;
+      }
   }
+  @media screen and (max-width: 990px) {
+    .hameburger{
+        display: block;
+       }
+}
+
+ 

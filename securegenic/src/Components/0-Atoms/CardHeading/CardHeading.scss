@@ -1,0 +1,16 @@
+.c_heading_atom{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    padding-top: 1rem;
+    color: white;
+    
+        .c_heading{
+            font-size: 18px;
+        }
+        .c_para{
+            font-weight: 400;
+            font-size: 14px;
+        }
+}
+

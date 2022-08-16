@@ -1,0 +1,54 @@
+.wrape_dashboard{
+    display: flex;
+    flex-direction: column;
+    background: rgb(246, 249, 252);
+    width: -webkit-fill-available;
+}
+.dashboard{
+    padding: 0rem 0.9rem;
+    width: -webkit-fill-available;
+}
+
+.f_card{
+    background-color: #ab4298;
+}
+.s_card{
+    background-color: #5c9ad3 ;
+
+}
+.t_card{
+    background-color: #8b78b7 ;
+}
+.forth_card{
+  
+    background-color: #5ecae6 ;
+}
+.dash__card{
+    width: 25rem;
+    height: 8.5rem;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    @media screen and  (max-width:"1300px"){
+        width: 15rem !important;
+    }
+    @media screen and  (max-width:"1700px"){
+        width: 20rem;
+    }
+    @media screen and  (max-width:"600px"){
+        width: 100% !important
+    }
+
+}
+.d_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1.5rem 0;
+}
+
+
+// ********************** For Location Page ******************
+.location_page{
+    padding: 0rem 0.9rem;
+}

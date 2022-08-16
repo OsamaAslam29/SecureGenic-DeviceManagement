@@ -1,0 +1,70 @@
+.device_page{
+    width: -webkit-fill-available;
+    padding: 0rem 2rem 2rem 1rem;
+    background: rgb(246, 249, 252);
+}
+.device_search{
+    padding: 1rem ;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+
+        .label_info{
+            color: #028CC9;
+            font-size: 16px;
+            font-weight: 600;
+        }
+            #optin{
+                border: none;
+                outline: none;
+                color: #686869;
+            }
+    }
+
+.search input{
+    padding: 7.4px 7px;
+    font-size: 17px;
+    border: 1px solid #163561;
+}
+.submit{
+    margin-right: 1rem;
+    color: #686869;
+    padding: 8.5px 15px;
+    background: #163561;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    color: #fff;    
+    transform: translateY(0px);  
+    transition: 0.3s;
+
+}
+.submit:hover{
+    background-color: rgb(209, 208, 208);
+    }
+
+.menus{
+    cursor: pointer;
+    padding: 12px 15px;
+    transition: 0.3s;
+    font-size: 19px;
+    border: 1px solid #163561;       
+}
+.menus:hover{
+    background-color: #163561;
+}
+
+.device_radio{
+    padding-top: .9rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+        input{
+            width: 18px;
+            height: 18px;
+        }
+        label{
+            font-weight: bold;
+        }
+}

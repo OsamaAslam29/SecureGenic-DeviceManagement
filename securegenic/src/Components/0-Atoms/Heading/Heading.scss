@@ -1,0 +1,16 @@
+.heading_atom{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    padding: 2.2rem 0rem;
+
+    .a_heading{
+        font-size: 18px;
+    }
+
+    .a_para{
+        font-weight: 400;
+        font-size: 14px;
+    }
+}
+

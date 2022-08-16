@@ -26,13 +26,10 @@
         
     // }
 .n_icon{
+        width: 15rem;
         display: flex;
         align-items: center;
         gap: .5rem;
-
-            .n_icon img{
-                height: 18px;
-            }
     }
  .sidenav{
         cursor: pointer;

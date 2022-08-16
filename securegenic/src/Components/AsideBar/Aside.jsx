@@ -1,3 +1,4 @@
+// ****************** All imports are here ****************
 import React from 'react'
 import './Aside.scss'
 import { Link } from 'react-router-dom'
@@ -17,6 +18,7 @@ import apply from '../../Assets/Navbar/application_management.png'
 
 const Aside = () => {
     return (
+// ****************** Aside Bar code ****************
         <div className='Aside_component'>
             <div className="sidenav">
                 <div className="n_icon"><img src={dash} alt="" /><Link to="/" >Dashboard</Link></div>

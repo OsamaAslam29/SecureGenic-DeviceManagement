@@ -1,3 +1,4 @@
+// ****************** All imports are here ****************
 import React from 'react'
 import './Navbar.scss'
 import n_logo from '../../Assets/Navbar/logo.png'
@@ -67,6 +68,8 @@ const Navbar = () => {
     );
     return (
         <>
+ {/* ****************** Navbar Code **************** */}
+        
             <div className="navbar">
                 <div className="logo">
                     <img src={n_logo} alt="error" />
@@ -76,6 +79,7 @@ const Navbar = () => {
                     <img src={n_button} alt="" />
                 </div>
            
+ {/* ****************** Hameburger Code **************** */}
             
             <div className="hameburger">
                <div className='ham_none'>
@@ -83,6 +87,7 @@ const Navbar = () => {
                         <React.Fragment key={anchor}>
 
                             <div className="menu">
+              
                                 <MenuIcon onClick={toggleDrawer(anchor, true)} />
                             </div>
                             <SwipeableDrawer

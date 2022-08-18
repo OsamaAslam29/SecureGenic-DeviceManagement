@@ -1,3 +1,4 @@
+// ************ All Imports ************
 import React from 'react'
 import { CircularProgressbar } from 'react-circular-progressbar';
 import Android from "../../Assets/DeepDive/android.svg"
@@ -8,9 +9,7 @@ import Wifi from "../../Assets/DeepDive/wifi.png"
 import 'react-circular-progressbar/dist/styles.css';
 import "./DeepDive.scss"
 
-
-
-
+// ************ body of component starts ************
 
 const DeepDive = () => {
   return (

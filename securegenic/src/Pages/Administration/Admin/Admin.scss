@@ -1,12 +1,18 @@
-.application_card{
+.admin_panel{
+    display: flex;
+    flex-direction: column;
     background: rgb(246, 249, 252);
-    padding: 0rem 0.9rem;
-    height: 100vh;
     width: 78vw;
+    height: 100vh;
+    padding: 0rem 0.9rem;
 }
-.application_button{
+.admin_button{
+    display: flex;
+    justify-content: space-between;
     padding: 1rem;
-    background-color: white;
+    .admin_button_heading{
+        font-size: 23px;
+    }
     button{
         display: flex;
         gap: .7rem;

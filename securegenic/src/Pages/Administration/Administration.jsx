@@ -1,9 +1,9 @@
 import React from 'react'
-
+import Admin from './Admin/Admin'
 const Administration = () => {
   return (
-    <div style={{marginLeft:"200px"}}>
-        this is Administration
+    <div>
+      <Admin/>
     </div>
   )
 }

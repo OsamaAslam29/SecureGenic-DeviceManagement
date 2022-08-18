@@ -1,3 +1,4 @@
+// ****************** Css Of Aside Bar****************
 .sidenav {
     height: 100%;
     width: 320px;
@@ -47,7 +48,7 @@
     .sidenav a:hover {
         color: #028cc9;
     }  
-
+// ****************** Media Queries****************
     @media screen and (max-width: 1400px){
         .sidenav {
             height: 100%;

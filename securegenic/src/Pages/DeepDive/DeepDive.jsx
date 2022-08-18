@@ -64,7 +64,7 @@ const DeepDive = () => {
                   <div className="details"><div className="name">SmartPhones</div> <div className="value">0</div></div>
                 </div>
                 <div className="status">
-                  <CircularProgressbar value={100} text={`${1}%`} />
+                  <CircularProgressbar value={100} text={`${10}%`} />
                 </div>
               </div>
             </div>

@@ -15,7 +15,7 @@ import deep from '../../Assets/Navbar/deepdive.png'
 import administration from '../../Assets/Navbar/administration.png'
 import battery from '../../Assets/Navbar/battery_report.png'
 import apply from '../../Assets/Navbar/application_management.png'
-
+// ********** Body of Application component starts***********
 const Aside = () => {
     return (
 // ****************** Aside Bar code ****************

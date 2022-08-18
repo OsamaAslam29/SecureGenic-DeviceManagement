@@ -1,7 +1,5 @@
 import React from 'react'
-
 import { CircularProgressbar } from 'react-circular-progressbar';
-
 import Android from "../../Assets/DeepDive/android.svg"
 import Application from "../../Assets/DeepDive/application.png"
 import Group from "../../Assets/DeepDive/group.png"
@@ -50,13 +48,12 @@ const DeepDive = () => {
               <div className="heading">Inventory Snapshot</div>
               <div className="inventory_data">
                 <div className="details"><p className="name">Active Devices</p> <p className="value">1</p></div>
-                <div className="details"><p className="name">Active Devices</p> <p className="value">1</p></div>
-                <div className="details"><p className="name">Active Devices</p> <p className="value">1</p></div>
-                <div className="details"><p className="name">Active Devices</p> <p className="value">1</p></div>
-                <div className="details"><p className="name">Active Devices</p> <p className="value">1</p></div>
-                <div className="details"><p className="name">Active Devices</p> <p className="value">1</p></div>
-                <div className="details"><p className="name">Active Devices</p> <p className="value">1</p></div>
-                <div className="details"><p className="name">Active Devices</p> <p className="value">1</p></div>
+                <div className="details"><p className="name">Inactive Devices</p> <p className="value">0</p></div>
+                <div className="details"><p className="name">Android EMM Devices</p> <p className="value">0</p></div>
+                <div className="details"><p className="name">Locked/Managed Devices</p> <p className="value">0</p></div>
+                <div className="details"><p className="name">Unlocked Devices</p> <p className="value">1</p></div>
+                <div className="details"><p className="name">Un-managed Devices</p> <p className="value">0</p></div>
+                <div className="details"><p className="name">Android Legacy Devices</p> <p className="value">0</p></div>
               </div>
             </div>
             <div className="device_type">

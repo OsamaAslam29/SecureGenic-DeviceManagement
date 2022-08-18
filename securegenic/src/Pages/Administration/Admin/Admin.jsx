@@ -4,6 +4,8 @@ import { FiPlusSquare } from 'react-icons/fi';
 import Heading from '../../../Components/0-Atoms/Heading/Heading'
 
 const Admin = () => {
+    
+    
   return (
     <div className='admin_panel'>
         <Heading heading="Administration" para="View and manage all your account administration and their roles"/>

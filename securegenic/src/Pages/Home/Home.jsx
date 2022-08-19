@@ -35,9 +35,7 @@ const Home = () => {
                 <Route path="/Reports" component={Reports} />
                 <Route path="/PrivacyPolicy" component={Reports} />
         </div>
-        
-        
-
+                
     </>
   )
 }   

@@ -1,9 +1,10 @@
 import React from 'react'
+import './DeviceHealth.scss'
 
 const DeviceHealth = () => {
   return (
     <div>
-        this is device health report component
+        
     </div>
   )
 }

@@ -28,7 +28,7 @@ const Device = () => {
       </div>
 
       <form action="/action_page.php" className="device_radio">
-        <label for="vehicle1">Select All Devices </label>
+        <label for="vehicle1" className="s_text" >Select All Devices </label>
         <input type="checkbox" />
       </form>
     </div>

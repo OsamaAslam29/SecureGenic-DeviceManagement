@@ -1,0 +1,200 @@
+.deepdive_container {
+    width: -webkit-fill-available;
+    margin: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    .title_box {
+        display: flex;
+        flex-direction: column;
+        gap: .2rem;
+
+        p {
+            font-size: .9rem;
+        }
+
+        .title {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    }
+
+    .deepdiv_box {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 1.5rem;
+
+        .platforms_box {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            padding: 1.7rem 1.5rem;
+            border-radius: .4rem;
+            background-color: #1b152d;
+            color: white;
+            font-size: 1.1rem;
+
+            .total {
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+                justify-content: center;
+                align-items: center;
+
+                b {
+                    font-size: 1.5rem;
+                }
+
+            }
+
+            .apps_box {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                .app {
+                    display: flex;
+                    gap: .7rem;
+                    align-items: center;
+
+                    .icon {
+                        width: 65px;
+
+                        img {
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .name_box {
+                        width: -webkit-fill-available;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        .inventory_box {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .inventory {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                border-radius: .5rem;
+                overflow: hidden;
+                box-shadow: 0px 27px 136px rgb(129 137 190 / 9%), 0px 6.0308px 30.3774px rgb(129 137 190 / 5%), 0px 1.79553px 9.04414px rgb(129 137 190 / 4%);
+
+                .heading {
+                    padding: .7rem;
+                    background-color: #f3f3f3;
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                }
+
+                .inventory_data {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    padding: 1rem;
+                    gap: 1.2rem;
+
+                    .details {
+                        width: 90%;
+                        display: flex;
+                        justify-content: space-between;
+
+                        .value {
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+
+            .device_type {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                border-radius: .5rem;
+                box-shadow: 0px 27px 136px rgb(129 137 190 / 9%), 0px 6.0308px 30.3774px rgb(129 137 190 / 5%), 0px 1.79553px 9.04414px rgb(129 137 190 / 4%);
+                overflow: hidden;
+
+                .heading {
+                    padding: .7rem;
+                    background-color: #f3f3f3;
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                }
+
+                .device_type_data {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 1rem;
+                    padding: 1rem;
+                    margin-bottom: 1rem;
+
+                    .details_box {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1.5rem;
+                        width: 90%;
+
+                        .details {
+                            display: flex;
+                            justify-content: space-between;
+
+                            .value {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+
+                    .status {
+                        display: flex;
+                        justify-self: center;
+                        align-self: center;
+                        width: 100px;
+                        height: 100px;
+                        // color: green;
+                        // background-color: green;
+                    }
+                }
+            }
+        }
+
+        .license_box {
+            height: fit-content;
+            width: -webkit-fil-available;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            border-radius: .5rem;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0px 27px 136px rgb(129 137 190 / 9%), 0px 6.0308px 30.3774px rgb(129 137 190 / 5%), 0px 1.79553px 9.04414px rgb(129 137 190 / 4%);
+
+            .heading {
+                background-color: #028cca;
+                width: -webkit-fil-available;
+                text-align: center;
+                padding: .7rem;
+                margin-bottom: 1rem;
+                color: white;
+            }
+
+            .used {
+                font-size: 1.1rem;
+                font-weight: bold;
+
+                &:last-child {
+                    margin-bottom: 1.2rem;
+                }
+            }
+        }
+    }
+}

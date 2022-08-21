@@ -1,5 +1,5 @@
 import React from 'react'
-import Alert from './Alert/Alert'
+// import Alert from './Alert/Alert'
 import ApplicationCard from './Application/ApplicationCard'
 
 const Application = () => {

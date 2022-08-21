@@ -16,7 +16,6 @@ const Group = () => {
           groups.
         </div>
       </div>
-
       <div className="buttons">
         <Link to="/Addgroup" style={{ textDecoration: "none" }}>
 

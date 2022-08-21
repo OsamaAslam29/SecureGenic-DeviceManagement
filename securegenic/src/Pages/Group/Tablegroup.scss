@@ -1,0 +1,36 @@
+.ant-table-column-sorters::after{
+background-color: #005179;
+border-left: 1px solid white;
+
+}
+
+.ant-table-column-title{
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+.ant-table-container table > thead > tr:first-child th:first-child{
+    background-color: #005179;
+    color: white;
+    font-size: 12px;
+}
+
+.ant-table-tbody > tr > td {
+    border-bottom: 1px solid #f0f0f0;
+    transition: background 0.3s;
+    text-align: center;
+    border-left: 1px solid #f0f0f0;
+    font-size: 13px;
+}
+
+.ant-table-thead > tr > th, .ant-table-tbody > tr > td, .ant-table tfoot > tr > th, .ant-table tfoot > tr > td {
+    position: relative;
+    padding: 8px 42px;
+    overflow-wrap: break-word;
+}
+
+// AiFillFilePdf
+// FaFileCsv
+// GrDocumentMissing
+// AiFillPrinter

@@ -1,0 +1,137 @@
+.main_push {
+    width: 100%;
+
+    .bold {
+        padding-left: 30px;
+        padding-top: 30px;
+        font-weight: 700;
+    }
+
+    .para {
+        padding-left: 30px;
+        width: 100%;
+        font-weight: 400;
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-family: "SourceSansVariable-Roman";
+        padding-top: 10px;
+    }
+
+    .push_content {
+        width: 100%;
+
+        .title {
+            font-weight: 300;
+            font-size: 20px;
+            width: 95%;
+            border-bottom: 1px solid #ebedf3;
+            padding-bottom: 20px;
+            padding-top: 40px;
+            margin-left: 30px;
+        }
+
+        .group {
+            display: flex;
+            flex-direction: column;
+            padding-left: 30px;
+            padding-top: 5px;
+
+            label {
+                width: 100%;
+                font-weight: 400;
+                font-size: 14px;
+                font-family: "SourceSansVariable-Roman";
+            }
+
+            .select_group {
+                width: 98%;
+                height: 40px;
+                border-radius: 8px;
+                border: none;
+                background-color: whitesmoke;
+                padding-left: 17px;
+                margin-top: 10px;
+            }
+        }
+
+        .group_2 {
+            display: flex;
+            width: 100%;
+
+            padding-top: 5px;
+
+            .label_1 {
+                width: 100%;
+                font-weight: 400;
+                font-size: 14px;
+                font-family: "SourceSansVariable-Roman";
+            }
+
+            .group {
+                width: 100%;
+                padding-top: 30px;
+            }
+
+            .select_application {
+                width: 95%;
+                height: 40px;
+                border-radius: 8px;
+                border: none;
+                background-color: whitesmoke;
+                padding-left: 17px;
+                margin-top: 10px;
+            }
+        }
+
+        .centre_group {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .group_3 {
+                display: flex;
+                flex-direction: column;
+
+                padding-top: 30px;
+
+                width: 46.5%;
+
+                label {
+                    font-weight: 400;
+                    font-size: 14px;
+                    font-family: "SourceSansVariable-Roman";
+                }
+
+                .select_group {
+                    height: 40px;
+                    border-radius: 8px;
+                    border: none;
+                    background-color: whitesmoke;
+                    padding-left: 17px;
+                    margin-top: 10px;
+                }
+            }
+        }
+        .buttons {
+            padding-left: 30px;
+            padding-top: 40px;
+            display: flex;
+            gap: 10px;
+        
+            button {
+              font-weight: 400;
+              font-size: 14px;
+              font-family: "SourceSansVariable-Roman";
+              padding-left: 15px;
+              padding-right: 15px;
+              padding-top: 10px;
+              padding-bottom: 10px;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+            }
+          }
+    }
+}

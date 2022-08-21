@@ -1,5 +1,9 @@
+::-webkit-scrollbar{
+    display: none;
+}
+
 .sidenav {
-    height: 100%;
+    height: 100vh;
     width: 275px;
     background-color: #fff;
     overflow-x: hidden;
@@ -8,6 +12,7 @@
     flex-direction: column;
     gap: 1.6rem;
     padding: 2rem 0 0 1.9rem;
+    overflow: scroll;
      } 
   .n_icon:hover {
             color: #028cc9;

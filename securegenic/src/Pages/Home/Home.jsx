@@ -14,11 +14,16 @@ import Wifi from '../WifiProfile/Wifi'
 import Utilities from '../Utilities/Utilities'
 import Administration from '../Administration/Administration'
 import DeviceHealth from '../DeviceHealthReport/DeviceHeath'
+import Group from '../Group/Group'
+import Addgroup from '../Group/Addgroup'
+import Pushgroup from '../Group/Pushgroup'
+import Tablegroup from '../Group/Tablegroup'
 
 
 const Home = () => {
   return (
     <>
+    
                 <Navbar/>
         <div className='Home_Container'> 
                 <Aside/>
@@ -34,6 +39,11 @@ const Home = () => {
                 <Route path="/DeviceHealth" component={DeviceHealth} />
                 <Route path="/Reports" component={Reports} />
                 <Route path="/PrivacyPolicy" component={Reports} />
+                <Route path="/Group" component={Group} />
+                <Route path="/Addgroup" component={Addgroup} />
+                <Route path="/Pushgroup" component={Pushgroup} />
+                <Route path="/Tablegroup" component={Tablegroup} />
+                
         </div>
 
     </>

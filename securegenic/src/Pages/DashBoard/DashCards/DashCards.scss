@@ -3,7 +3,7 @@
     flex-direction: column;
     background: rgb(246, 249, 252);
     width: -webkit-fill-available;
-}
+
 .dashboard{
     padding: 0rem 0.9rem;
     width: -webkit-fill-available;
@@ -47,8 +47,78 @@
     gap: 1.5rem 0;
 }
 
+.line_graph{
+    
+
+
+
+    .title{
+        text-align: center;
+        font-family: "SourceSansVariable-Roman";
+        font-weight: 400;
+        margin: 40px 0;
+        font-size: 30px;
+    }
+}
+
+
+.donut_main{
+display: flex;
+width: 100%;
+justify-content: space-around;
+
+.donut_chart{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+.donut_title{
+   
+    font-family: "SourceSansVariable-Roman";
+    font-weight: 400;
+    margin: 40px 0;
+    font-size: 30px;
+}
+
+}
+.battery{
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 40px;
+    font-family: "SourceSansVariable-Roman";
+    font-weight: 400;
+    margin: 40px 0;
+    font-size: 30px;   
+}
+.charging{
+    
+    font-family: "SourceSansVariable-Roman";
+    font-weight: 700;
+    margin: 40px 0;
+    font-size: 30px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    span{
+font-size: 25px;
+font-weight: 400;
+padding-top: 20px;
+    } 
+
+
+}
+
+}
+  
+}
 
 // ********************** For Location Page ******************
 .location_page{
     padding: 0rem 0.9rem;
 }
+
+
+ 

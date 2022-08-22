@@ -1,5 +1,6 @@
 .main_push {
     width: 100%;
+    padding-bottom: 30px;
 
     .bold {
         padding-left: 30px;
@@ -27,7 +28,7 @@
             width: 95%;
             border-bottom: 1px solid #ebedf3;
             padding-bottom: 20px;
-            padding-top: 40px;
+            padding-top: 20px;
             margin-left: 30px;
         }
 
@@ -36,6 +37,10 @@
             flex-direction: column;
             padding-left: 30px;
             padding-top: 5px;
+            width: 100%;
+            @media(max-width:500px){
+             
+                 }
 
             label {
                 width: 100%;
@@ -45,7 +50,7 @@
             }
 
             .select_group {
-                width: 98%;
+                width: 95%;
                 height: 40px;
                 border-radius: 8px;
                 border: none;
@@ -60,6 +65,10 @@
             width: 100%;
 
             padding-top: 5px;
+            @media(max-width:500px){
+                flex-direction: column;
+                justify-content: center;
+                 }
 
             .label_1 {
                 width: 100%;
@@ -89,7 +98,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-
+            @media(max-width:500px){
+              justify-content: unset;
+              padding-left: 30px;
+                 }
             .group_3 {
                 display: flex;
                 flex-direction: column;
@@ -97,6 +109,9 @@
                 padding-top: 30px;
 
                 width: 46.5%;
+                @media(max-width:500px){
+                    width: 95%;
+                     }
 
                 label {
                     font-weight: 400;

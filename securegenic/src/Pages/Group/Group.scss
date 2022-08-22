@@ -1,35 +1,51 @@
 .main_group {
+  width: 100%;
   .title {
     width: 100%;
-    float: left;
     font-weight: 600;
     font-size: 18px;
     line-height: 11px;
     font-family: "SourceSansVariable-Roman";
     padding-top: 50px;
     padding-left: 30px;
+    @media(max-width:600px){
+     padding-left: unset;
+      text-align: center;
+     }
   }
 
   .para {
     width: 100%;
-    float: left;
     font-weight: 400;
     font-size: 14px;
     margin-top: 0;
     margin-bottom: 1rem;
     font-family: "SourceSansVariable-Roman";
     padding-top: 20px;
+    @media(max-width:600px){
+     line-height: 25px;
+     text-align: center;
+     padding-left: 10px;
+     padding-right: 10px;
+    }
   }
 
   .buttons {
     display: flex;
-    width: 100%;
+    width: 95%;
     padding-left: 70px;
     gap: 20px;
     justify-content: flex-end;
     padding-top: 50px;
     border-bottom: 1px solid #ebedf3;
     padding-bottom: 20px;
+ 
+    @media(max-width:600px){
+   padding-left: unset;
+      justify-content: center;
+      width: 100%;
+      padding-top: unset;
+    }
     button {
       padding: 10px 36px;
       color: #ffffff;
@@ -45,6 +61,14 @@
       justify-content: center;
       align-items: center;
       gap: 10px;
+      @media(max-width:600px){
+     font-size: 12px;
+     padding: 5px 26px;
+      }
+      @media(max-width:350px){
+     font-size: 10px;
+     padding: 3px 20px;
+      }
     }
   }
 
@@ -52,8 +76,20 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-
+    
+    @media(max-width:600px){
+     padding-left: 10px;
+     padding-right: 10px;
+     
+     }
+    @media(max-width:550px){
+     justify-content: center;
+     align-items: center;
+     padding-left: unset;
+padding-right: unset;
+     }
     .card {
+      margin-left: 30px;
       background: #ffffff;
       border: 0.5px solid #dadada;
       box-shadow: 0px 20px 39px rgb(235 235 235 / 25%);
@@ -63,6 +99,9 @@
       margin-bottom: 20px;
       padding-bottom: 20px;
       width: 250px;
+      @media(max-width:600px){
+     margin-left: unset;
+       }
 
       .card_content {
         padding-left: 20px;

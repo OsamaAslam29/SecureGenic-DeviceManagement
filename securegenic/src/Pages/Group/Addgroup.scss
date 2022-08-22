@@ -9,6 +9,10 @@
     font-family: "SourceSansVariable-Roman";
     padding-top: 50px;
     padding-left: 30px;
+    @media(max-width:450px){
+      padding-left: unset;
+      text-align: center;
+       }
   }
 
   .para {
@@ -20,7 +24,13 @@
     margin-bottom: 1rem;
     font-family: "SourceSansVariable-Roman";
     padding-top: 20px;
+    @media(max-width:450px){
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+       }
   }
+
 
   .notice {
     background-color: #028cc9;
@@ -38,6 +48,21 @@
     border-radius: 8px;
     margin-top: 30px;
     margin-left: 30px;
+    @media(max-width:1120px){
+     font-size: 11px;
+     }
+    @media(max-width:990px){
+     font-size: 14px;
+     }
+    @media(max-width:840px){
+     font-size: 11px;
+     padding-left: 3px;
+     gap: 2px;
+     }
+    @media(max-width:630px){
+    display: none;
+     }
+  
 
     .bell {
       color: rgb(170, 166, 166);

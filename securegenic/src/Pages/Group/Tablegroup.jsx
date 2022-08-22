@@ -147,6 +147,9 @@ const Tablegroup = () => {
         
       </div>
 
+<div className="icon_content">
+
+
 
 <div className="icons_main">
 <div className="icon">
@@ -173,6 +176,13 @@ const Tablegroup = () => {
  </Dropdown>
 </div>
  
+ </div>
+
+<div className="group">
+  <label>Search :</label>
+  <input type='text'/>
+</div>
+
  </div>
 
       <div className="table_content">

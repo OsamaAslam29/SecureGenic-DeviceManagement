@@ -20,12 +20,9 @@
     "react-donut-chart": "^1.3.1",
     "react-icons": "^4.4.0",
     "react-router-dom": "^5.3.3",
-<<<<<<< HEAD
     "react-scripts": "5.0.1",
     "recharts": "^2.1.13",
-=======
     "react-scripts": "^5.0.1",
->>>>>>> d3a51d2c0b3b6353c9dbeefb6d0a0234fd97c0c5
     "sass": "^1.54.4",
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"

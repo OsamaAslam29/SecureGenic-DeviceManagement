@@ -1,36 +1,147 @@
-.ant-table-column-sorters::after{
-background-color: #005179;
-border-left: 1px solid white;
+.main_table{
 
+    .title {
+        width: 100%;
+        float: left;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 11px;
+        font-family: "SourceSansVariable-Roman";
+        padding-top: 50px;
+        padding-left: 30px;
+      }
+    
+      .para {
+        width: 100%;
+        float: left;
+        font-weight: 400;
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-family: "SourceSansVariable-Roman";
+        padding-top: 20px;
+      }
+    
+      .buttons {
+        display: flex;
+        width: 95%;
+        gap: 20px;
+        justify-content: space-between;
+        padding-top: 50px;
+        border-bottom: 1px solid #ebedf3;
+        padding-bottom: 20px;
+        font-size: 30px;
+        padding-left: 30px;
+        button {
+          padding: 10px 36px;
+          color: #ffffff;
+          background-color: #028cc9;
+          border-color: #028cc9;
+          font-weight: 600 !important;
+          font-size: 1rem;
+          line-height: 1.5;
+          border-radius: 0.42rem;
+          border: none;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+        }
+      }
+    
+.table_content{
+    width: 95%;
+    padding-left: 30px;
+    .ant-table-column-sorters::after{
+        background-color: #005179;
+        border-left: 1px solid white;
+        
+        }
+        
+        .ant-table-column-title{
+            color: white;
+            text-align: center;
+            font-size: 12px;
+        }
+        
+        .ant-table-container table > thead > tr:first-child th:first-child{
+            background-color: #005179;
+            color: white;
+            font-size: 12px;
+        }
+        
+        .ant-table-tbody > tr > td {
+            border-bottom: 1px solid #f0f0f0;
+            transition: background 0.3s;
+            text-align: center;
+            border-left: 1px solid #f0f0f0;
+            font-size: 13px;
+        }
+        
+        .ant-table-thead > tr > th, .ant-table-tbody > tr > td, .ant-table tfoot > tr > th, .ant-table tfoot > tr > td {
+            position: relative;
+        
+            overflow-wrap: break-word;
+        }
+
+        .ant-table-column-sorter{
+            z-index: 1;
+            color: white !important;
+        }
+        
 }
 
-.ant-table-column-title{
-    color: white;
-    text-align: center;
-    font-size: 12px;
+
+.icons_main{
+    display: flex;
+margin-bottom: 20px;
+
+  width: 500px;
+  margin-left: 40px;
+color: white;
+justify-content: space-around;
+align-items: center;
+    .icon{
+        font-size: 20px;
+        padding: 0px 40px;
+        text-align: center;
+        background-color: #005179;
+     fill: white;
+     height: 40px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+
+    }
+
+    .icon:hover{
+        background-color: black
+    }
+
+    button{
+        padding: 10px 36px;
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        background-color: #005179;
+        color: white;
+        border: none;
+        gap: 6px;
+        height: 40px;
+        border-radius: 0px;
+    }
+
+ button:after{
+    content: '<';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(270deg);
+ }
 }
 
-.ant-table-container table > thead > tr:first-child th:first-child{
-    background-color: #005179;
-    color: white;
-    font-size: 12px;
-}
 
-.ant-table-tbody > tr > td {
-    border-bottom: 1px solid #f0f0f0;
-    transition: background 0.3s;
-    text-align: center;
-    border-left: 1px solid #f0f0f0;
-    font-size: 13px;
 }
-
-.ant-table-thead > tr > th, .ant-table-tbody > tr > td, .ant-table tfoot > tr > th, .ant-table tfoot > tr > td {
-    position: relative;
-    padding: 8px 42px;
-    overflow-wrap: break-word;
-}
-
-// AiFillFilePdf
-// FaFileCsv
-// GrDocumentMissing
-// AiFillPrinter

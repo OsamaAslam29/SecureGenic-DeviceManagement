@@ -8,7 +8,8 @@ import { BsFillBellFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 const Group = () => {
   return (
-    <div className="main_group">
+   <>
+     <div className="main_group">
       <div className="title">
         Group
         <div className="para">
@@ -57,6 +58,7 @@ const Group = () => {
         </div>
       </div>
     </div>
+   </>
   );
 };
 

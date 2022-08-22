@@ -33,7 +33,6 @@ const Home = () => {
                 <Route path="/Device" component={Device} />
                 <Route path="/Application" component={Application} />
                 <Route path="/Wifi" component={Wifi} />
-                <Route path="/Group" component={Group} />
                 <Route path="/Location" component={Location} />
                 <Route path="/Utilities" component={Utilities} />
                 <Route path="/Administration" component={Administration} />

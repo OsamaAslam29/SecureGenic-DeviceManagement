@@ -1,4 +1,4 @@
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
 }
 
@@ -12,69 +12,80 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 2rem 0 0 1.9rem;
-    overflow: scroll;
-     } 
-  .n_icon:hover {
-            color: #028cc9;
-            animation: n_icon 1s ease-out infinite;
-       }
-    // @keyframes n_icon {
-    //     0%{
-    //         transform:  scale(.5,.5);
-    //     }
-    //     50%{
-    //         transform:  scale(1.5,1.5);
-    //     }
-    //     100%{
-    //         transform:  scale(.7,.7);
-    //     }
-        
-    // }
-.n_icon{
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-    }
-.n_icon img{
-        width: 1.5rem;
-    }
- .sidenav{
-        cursor: pointer;
+    padding: 2rem 1.7rem;
+    overflow-y: scroll;
+}
 
-    }
-    .sidenav a {
-        text-decoration: none;
-        color: #1A142C;
-        font-weight: 500;
-        font-size: 18px;
-        text-transform: capitalize;
-    }
-    .sidenav a:hover {
-        color: #028cc9;
-    }  
+.n_icon:hover {
+    color: #028cc9;
+    animation: n_icon 1s ease-out infinite;
+}
+
+// @keyframes n_icon {
+//     0%{
+//         transform:  scale(.5,.5);
+//     }
+//     50%{
+//         transform:  scale(1.5,1.5);
+//     }
+//     100%{
+//         transform:  scale(.7,.7);
+//     }
+
+// }
+.n_icon {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.n_icon img {
+    width: 1.5rem;
+}
+
+.sidenav {
+    cursor: pointer;
+
+}
+
+.sidenav a {
+    text-decoration: none;
+    color: #1A142C;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.sidenav a:hover {
+    color: #028cc9;
+}
+
 // ****************** Media Queries****************
-    @media screen and (max-width: 1400px){
-        .sidenav {
-            height: 100%;
-            width: 275px;
-            gap: 1.6rem;
-            padding: 2rem 0 0 1.9rem;
-             }
-        .n_icon{
-                gap: .5rem;
-            }
-        .n_icon img{
-            width: 1.1rem;
-            }
-            .sidenav a {
-                font-weight: 400;
-                font-size: 15px;
-            } 
-        
+@media screen and (max-width: 1400px) {
+    .sidenav {
+        height: 100%;
+        width: 275px;
+        gap: 1.6rem;
+        padding: 2rem 0 0 1.9rem;
     }
-    @media screen and (max-width: 990px){
-        .sidenav{
-            display: none;
-        }
+
+    .n_icon {
+        gap: .5rem;
     }
+
+    .n_icon img {
+        width: 1.1rem;
+    }
+
+    .sidenav a {
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 990px) {
+    .sidenav {
+        display: none;
+    }
+}

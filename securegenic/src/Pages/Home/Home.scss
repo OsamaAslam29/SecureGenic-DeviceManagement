@@ -1,4 +1,12 @@
 .Home_Container{
     display: flex;
-    
+    height: calc(100vh - 90px);
+    overflow: hidden;
+
+    .right_container{
+        height: 100%;
+        overflow: hidden;
+        overflow-y: scroll;
+        width: -webkit-fill-available;
+    }
 }

@@ -4,7 +4,7 @@ import { Button, Dropdown, Menu } from "antd";
 import { AiFillDelete } from "react-icons/ai";
 import { AiFillFilePdf } from "react-icons/ai";
 import { FaFileCsv } from "react-icons/fa";
-import { GrDocumentMissing } from "react-icons/gr";
+import { HiOutlineDocument } from "react-icons/hi";
 import { AiFillPrinter } from "react-icons/ai";
 import { FiPlusSquare } from "react-icons/fi";
 import "./Tablegroup.scss";
@@ -125,9 +125,7 @@ const Tablegroup = () => {
   };
   return (
     <div className="main_table">
-
-
-<div className="title">
+      <div className="title">
         Group
         <div className="para">
           The device groups feature allows you to organize your devices into
@@ -135,60 +133,43 @@ const Tablegroup = () => {
         </div>
       </div>
       <div className="buttons">
-       
-          
-      Push Application Group
-       
-
-          <button>
-
-            <FiPlusSquare /> Push Application Group
-          </button>
-        
+        Push Application Group
+        <button>
+          <FiPlusSquare /> Push Application Group
+        </button>
       </div>
 
-<div className="icon_content">
+      <div className="icon_content">
+        <div className="icons_main">
+          <div className="icon">
+            <AiFillPrinter />
+          </div>
+          <div className="icon">
+            <HiOutlineDocument />
+          </div>
+          <div className="icon">
+            <FaFileCsv />
+          </div>
+          <div className="icon">
+            <AiFillFilePdf />
+          </div>
 
+          <div className="btn">
+            <Dropdown overlay={menu} placement="bottom" arrow>
+              <Button>Filter</Button>
+            </Dropdown>
+          </div>
+        </div>
 
-
-<div className="icons_main">
-<div className="icon">
-
-<AiFillPrinter/>
-</div>
-<div className="icon">
-
-<GrDocumentMissing/>
-</div>
-<div className="icon">
-
-<FaFileCsv/>
-</div>
-<div className="icon">
-
-<AiFillFilePdf/>  
-</div>
-
-<div className="btn">
-
- <Dropdown overlay={menu} placement="bottom" arrow>
-   <Button>Filter</Button>
- </Dropdown>
-</div>
- 
- </div>
-
-<div className="group">
-  <label>Search :</label>
-  <input type='text'/>
-</div>
-
- </div>
+        <div className="group">
+          <label>Search :</label>
+          <input type="text" />
+        </div>
+      </div>
 
       <div className="table_content">
         <Table columns={columns} dataSource={data} onChange={onChange} />
       </div>
-
     </div>
   );
 };

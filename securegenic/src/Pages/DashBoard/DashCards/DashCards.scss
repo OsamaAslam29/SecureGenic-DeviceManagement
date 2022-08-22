@@ -1,153 +1,147 @@
-.wrape_dashboard{
+.wrape_dashboard {
     display: flex;
     flex-direction: column;
     background: rgb(246, 249, 252);
     width: -webkit-fill-available;
 
-.dashboard{
-    padding: 0rem 0.9rem;
-}
-
-.f_card{
-    background-color: #ab4298;
-}
-.s_card{
-    background-color: #5c9ad3 ;
-
-}
-.t_card{
-    background-color: #8b78b7 ;
-}
-.forth_card{
-  
-    background-color: #5ecae6 ;
-}
-.dash__card{
-    width: 25rem;
-    height: 8.5rem;
-    padding: 1rem;
-    border-radius: 0.3rem;
-    @media screen and  (max-width:"1300px"){
-        width: 15rem !important;
-    }
-    @media screen and  (max-width:"1700px"){
-        width: 20rem;
-    }
-    @media screen and  (max-width:"600px"){
-        width: 100% !important
+    .dashboard {
+        padding: 0rem 0.9rem;
     }
 
-}
-.d_cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    gap: 1.5rem 0;
-}
-
-.line_graph{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-
-
-    .title{
-        text-align: center;
-        font-family: "SourceSansVariable-Roman";
-        font-weight: 400;
-        margin: 20px 0;
-        font-size: 25px;
-    }
-.recharts-default-legend{
-    display: none;
-}
-
-.recharts-wrapper{
-    width: 100% !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-    .recharts-surface{
-        width: 90% !important;
+    .f_card {
+        background-color: #ab4298;
     }
 
-}
+    .s_card {
+        background-color: #5c9ad3;
+    }
 
+    .t_card {
+        background-color: #8b78b7;
+    }
 
-.donut_main{
-display: flex;
-width: 100%;
-justify-content: space-around;
+    .forth_card {
+        background-color: #5ecae6;
+    }
 
-@media (max-width:500px) {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
+    .dash__card {
+        width: 25rem;
+        height: 8.5rem;
+        padding: 1rem;
+        border-radius: 0.3rem;
 
-.donut_chart{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+        @media screen and (max-width: "1300px") {
+            width: 15rem !important;
+        }
 
-.donutchart{
-    width: 300px !important;
-    height: 300px !important;
-}
+        @media screen and (max-width: "1700px") {
+            width: 20rem;
+        }
 
-.donut_title{
-   
-    font-family: "SourceSansVariable-Roman";
-    font-weight: 400;
-    margin: 10px 0;
-    font-size: 20px;
-}
+        @media screen and (max-width: "600px") {
+            width: 100% !important;
+        }
+    }
 
-}
-.battery{
-    display: flex;
-flex-direction: column;
-align-items: center;
-gap: 20px;
-    font-family: "SourceSansVariable-Roman";
-    font-weight: 400;
-    margin: 10px 0;
-    font-size: 20px;   
-}
-.charging{
-    
-    font-family: "SourceSansVariable-Roman";
-    font-weight: 700;
-    margin: 10px 0;
-    font-size: 20px;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+    .d_cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        gap: 1.5rem 0;
+    }
 
-    span{
-font-size: 25px;
-font-weight: 400;
-padding-top: 20px;
-    } 
+    .line_graph {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
+        .title {
+            text-align: center;
+            font-family: "SourceSansVariable-Roman";
+            font-weight: 400;
+            margin: 20px 0;
+            font-size: 25px;
+        }
 
-}
+        .recharts-default-legend {
+            display: none;
+        }
 
-}
-  
+        .recharts-wrapper {
+            width: 100% !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .recharts-surface {
+            width: 90% !important;
+        }
+    }
+
+    .donut_main {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+
+        @media (max-width: 500px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .donut_chart {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .donutchart {
+                width: 300px !important;
+                height: 300px !important;
+            }
+
+            .donut_title {
+                font-family: "SourceSansVariable-Roman";
+                font-weight: 400;
+                margin: 10px 0;
+                font-size: 20px;
+            }
+        }
+
+        .battery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            font-family: "SourceSansVariable-Roman";
+            font-weight: 400;
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        .charging {
+            font-family: "SourceSansVariable-Roman";
+            font-weight: 700;
+            margin: 10px 0;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            span {
+                font-size: 25px;
+                font-weight: 400;
+                padding-top: 20px;
+            }
+        }
+    }
 }
 
 // ********************** For Location Page ******************
-.location_page{
+.location_page {
     padding: 0rem 0.9rem;
 }
-
-
- 

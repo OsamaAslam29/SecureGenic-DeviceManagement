@@ -1,6 +1,7 @@
+// *****************  All Imports *************
 import React from 'react'
 import './CardHeading.scss'
-
+// *****************  Body starts *************
 const CardHeading = (props) => {
   return (
     <div className='c_heading_atom'>

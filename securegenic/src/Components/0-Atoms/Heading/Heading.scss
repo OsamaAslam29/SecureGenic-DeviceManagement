@@ -1,10 +1,11 @@
     .heading_atom {
         display: flex;
         flex-direction: column;
-        gap: .3rem;
+        // gap: .3rem;
         padding: 3rem 0rem;
 
         .a_heading {
+            margin: 0;
             font-size: 28px;
             font-weight: bold;
         }
@@ -17,15 +18,18 @@
     }
 
     // ********** Media Queries ************
+    
     @media screen and (max-width:1400px) {
         .heading_atom {
             padding: 2rem 0rem;
             gap: 0rem;
+
             .a_heading {
                 font-size: 18px;
                 margin: 0;
-                
+
             }
+
             .a_para {
                 font-size: 14px;
             }

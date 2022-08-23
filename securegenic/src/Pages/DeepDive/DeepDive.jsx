@@ -19,7 +19,10 @@ const DeepDive = () => {
           <p className="title">Securegenic DeepDive</p>
           <p>Get quick & deep insights into your inventory and how they are used.</p>
         </div>
+
         <div className="deepdiv_box">
+ {/* ***************** Platform_box of Deepdive ************* */}
+
           <div className="platforms_box">
             <div className="heading">Platforms Summary</div>
             <div className="total"> <p>Total Devices Enrolled</p> <b>1</b> </div>
@@ -42,6 +45,7 @@ const DeepDive = () => {
               </div>
             </div>
           </div>
+ {/* ***************** Inventory_box of Deepdive ************* */}
           <div className="inventory_box">
             <div className="inventory">
               <div className="heading">Inventory Snapshot</div>
@@ -68,6 +72,7 @@ const DeepDive = () => {
               </div>
             </div>
           </div>
+ {/* ***************** License_box of Deepdive ************* */}
           <div className="license_box">
             <div className="heading">License Overview</div>
             <div className="used">License Used</div>

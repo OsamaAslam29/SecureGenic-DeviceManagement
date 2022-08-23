@@ -1,3 +1,4 @@
+// *****************  All Imports are here *************
 import React from 'react'
 import './DashCards.scss'
 import device from '../../../Assets/Dashboard/devices.png'
@@ -117,9 +118,10 @@ const DashCards = () => {
     <div className='wrape_dashboard'>
       <div className="dashboard">
         <Heading heading="Dashboard" para="View Status of devices and Application" />
-         <div className="dash_cards_box">
+ {/* ***************** DashBoard Cards ************* */}
+        <div className="dash_cards_box">
           {
-              CardsData.map((card)=>{
+            CardsData.map((card) => {
               return (
                 <>
                   <div className="card" style={{ backgroundColor: `${card.backColor}` }}>
@@ -131,13 +133,12 @@ const DashCards = () => {
               )
             })
           }
-        </div> 
-        
-      </div>
-      <div className="line_graph">
-        <div className="title">
-          Installed Application
         </div>
+
+      </div>
+ {/* ***************** DashBoard graph ************* */}
+      <div className="line_graph">
+        <div className="title">Installed Application</div>
         <LineChart
           width={1500}
           height={350}
@@ -158,10 +159,10 @@ const DashCards = () => {
           <Line type="monotone" dataKey="uv" stroke="Purple" />
         </LineChart>
       </div>
-
+ {/* ***************** DashBoard Progress bar ************* */}
       <div className="donut_main">
         <div className="donut_chart">
-           <div className="donut_title">Application Version Count</div>
+          <div className="donut_title">Application Version Count</div>
 
           <DonutChart
             width={500}
@@ -172,23 +173,16 @@ const DashCards = () => {
             innerRadius={reactDonutChartInnerRadius}
             selectedOffset={reactDonutChartSelectedOffset}
             onClick={(item, toggled) => reactDonutChartHandleClick(item, toggled)}
-            style={{ fontSize: '30px' }}
+          // style={{ fontSize: '400px' }}
           />
         </div>
 
-        <div className="battery">
-          Device Battery Status
-
-          <div className="charging">
-            Charging 25%
+        <div className="battery">Device Battery Status
+          <div className="charging">Charging 25%
             <span>0</span>
-
           </div>
-
         </div>
-
       </div>
-
     </div>
   )
 }

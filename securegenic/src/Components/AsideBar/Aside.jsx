@@ -18,7 +18,7 @@ import apply from '../../Assets/Navbar/application_management.png'
 // ********** Body of Application component starts***********
 const Aside = () => {
     return (
-        // ****************** Aside Bar code ****************
+        
         <div className="sidenav">
             <div className="n_icon"><img src={dash} alt="" /><Link to="/" >Dashboard</Link></div>
             <div className="n_icon"><img src={deep} alt="" /><Link to="/DeepDive" >DeepDive</Link></div>

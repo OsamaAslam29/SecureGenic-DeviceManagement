@@ -1,11 +1,11 @@
 .main_group {
   width: 100%;
+  padding: 0rem 1rem;
   .title {
     width: 100%;
     font-weight: 600;
     font-size: 18px;
     line-height: 11px;
-    font-family: "SourceSansVariable-Roman";
     padding-top: 50px;
     padding-left: 30px;
     @media(max-width:600px){
@@ -20,7 +20,6 @@
     font-size: 14px;
     margin-top: 0;
     margin-bottom: 1rem;
-    font-family: "SourceSansVariable-Roman";
     padding-top: 20px;
     @media(max-width:600px){
      line-height: 25px;
@@ -89,7 +88,7 @@
 padding-right: unset;
      }
     .card {
-      margin-left: 30px;
+      margin-top: 1rem ;
       background: #ffffff;
       border: 0.5px solid #dadada;
       box-shadow: 0px 20px 39px rgb(235 235 235 / 25%);

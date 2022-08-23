@@ -7,6 +7,8 @@
     .dashboard {
         padding: 0rem 0.9rem;
 
+// *****************  CSS Of Cards *************
+
         .dash_cards_box{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -39,49 +41,8 @@
         }
     }
 
-    .f_card {
-        background-color: #ab4298;
     }
-
-    .s_card {
-        background-color: #5c9ad3;
-    }
-
-    .t_card {
-        background-color: #8b78b7;
-    }
-
-    .forth_card {
-        background-color: #5ecae6;
-    }
-
-    .dash__card {
-        width: 25rem;
-        height: 8.5rem;
-        padding: 1rem;
-        border-radius: 0.3rem;
-
-        @media screen and (max-width: "1300px") {
-            width: 15rem !important;
-        }
-
-        @media screen and (max-width: "1700px") {
-            width: 20rem;
-        }
-
-        @media screen and (max-width: "600px") {
-            width: 100% !important;
-        }
-    }
-
-    .d_cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 100%;
-        gap: 1.5rem 0;
-    }
-
+// *****************  CSS Of Graph *************
     .line_graph {
         width: 100%;
         display: flex;
@@ -92,7 +53,7 @@
         .title {
             text-align: center;
             font-weight: 400;
-            margin: 25px 0;
+            margin-top: 25px;
             font-size: 27px;
         }
 
@@ -111,6 +72,7 @@
             width: 90% !important;
         }
     }
+// *****************  CSS Of Progress bar *************
 
     .donut_main {
         display: flex;
@@ -169,9 +131,3 @@
             }
         }
     }
-}
-
-// ********************** For Location Page ******************
-.location_page {
-    padding: 0rem 0.9rem;
-}

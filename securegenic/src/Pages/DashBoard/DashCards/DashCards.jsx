@@ -17,7 +17,7 @@ import {
   Legend
 } from "recharts";
 
-// function for line chart
+// functions
 
 const CardsData = [
   {
@@ -46,21 +46,22 @@ const CardsData = [
   }
 
 ];
+// *************** Function for Chart **********************
 const data = [
   {
-    name: "Aepl",
+    name: "osama",
     uv: 500,
 
     amt: 2400
   },
   {
-    name: "Bel-connect",
+    name: "Baber",
     uv: 600,
 
     amt: 2210
   },
   {
-    name: "Transworld",
+    name: "Mudassar",
     uv: 2000,
     amt: 2290
   },
@@ -116,9 +117,9 @@ const DashCards = () => {
     <div className='wrape_dashboard'>
       <div className="dashboard">
         <Heading heading="Dashboard" para="View Status of devices and Application" />
-        <div className="dash_cards_box">
+         <div className="dash_cards_box">
           {
-            CardsData.map((card) => {
+              CardsData.map((card)=>{
               return (
                 <>
                   <div className="card" style={{ backgroundColor: `${card.backColor}` }}>
@@ -130,15 +131,16 @@ const DashCards = () => {
               )
             })
           }
-        </div>
+        </div> 
+        
       </div>
       <div className="line_graph">
         <div className="title">
           Installed Application
         </div>
         <LineChart
-          width={1000}
-          height={300}
+          width={1500}
+          height={350}
           data={data}
           margin={{
             top: 5,
@@ -158,14 +160,8 @@ const DashCards = () => {
       </div>
 
       <div className="donut_main">
-
-
-
         <div className="donut_chart">
-
-          <div className="donut_title">
-            Application Version Count
-          </div>
+           <div className="donut_title">Application Version Count</div>
 
           <DonutChart
             width={500}

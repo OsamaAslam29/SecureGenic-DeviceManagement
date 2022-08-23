@@ -28,8 +28,8 @@ const Home = () => {
       <div className='Home_Container'>
         <Aside />
         <div className="right_container">
-          <Route exact path="/" component={DashBoard} />
-          <Route path="/DeepDive" component={DeepDive} />
+         <Route exact path="/" component={DashBoard} />
+           {/* <Route path="/DeepDive" component={DeepDive} />
           <Route path="/EnrollDevices" component={EnrollDevices} />
           <Route path="/Device" component={Device} />
           <Route path="/Application" component={Application} />
@@ -43,7 +43,7 @@ const Home = () => {
           <Route path="/Group" component={Group} />
           <Route path="/Addgroup" component={Addgroup} />
           <Route path="/Pushgroup" component={Pushgroup} />
-          <Route path="/Tablegroup" component={Tablegroup} />
+          <Route path="/Tablegroup" component={Tablegroup} /> */}
         </div>
       </div>
 

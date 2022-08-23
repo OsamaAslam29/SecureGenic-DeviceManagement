@@ -91,10 +91,9 @@
 
         .title {
             text-align: center;
-            font-family: "SourceSansVariable-Roman";
             font-weight: 400;
-            margin: 20px 0;
-            font-size: 25px;
+            margin: 25px 0;
+            font-size: 27px;
         }
 
         .recharts-default-legend {
@@ -136,7 +135,7 @@
             }
 
             .donut_title {
-                font-family: "SourceSansVariable-Roman";
+                // font-family: "SourceSansVariable-Roman";
                 font-weight: 400;
                 margin: 10px 0;
                 font-size: 20px;
@@ -148,14 +147,14 @@
             flex-direction: column;
             align-items: center;
             gap: 20px;
-            font-family: "SourceSansVariable-Roman";
+            // font-family: "SourceSansVariable-Roman";
             font-weight: 400;
             margin: 10px 0;
             font-size: 20px;
         }
 
         .charging {
-            font-family: "SourceSansVariable-Roman";
+            // font-family: "SourceSansVariable-Roman";
             font-weight: 700;
             margin: 10px 0;
             font-size: 20px;

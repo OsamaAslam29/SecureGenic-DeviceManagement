@@ -5,13 +5,13 @@
 // ****************** Css Of Aside Bar****************
 .sidenav {
     height: 100%;
-    width: 320px;
+    width: 400px;
     background-color: #fff;
-    overflow-x: hidden;
+    overflow-x: hidden; 
     border-right: 0.5px solid rgba(33, 155, 208, 0.3882352941);
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
     padding: 2rem 1.7rem;
     overflow-y: scroll;
     box-shadow: 2px 4px 12px rgba(96, 108, 128, 0.12);

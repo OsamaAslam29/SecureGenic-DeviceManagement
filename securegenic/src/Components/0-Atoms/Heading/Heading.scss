@@ -6,6 +6,7 @@
 
         .a_heading {
             font-size: 28px;
+            font-weight: bold;
         }
 
         .a_para {
@@ -18,13 +19,13 @@
     // ********** Media Queries ************
     @media screen and (max-width:1400px) {
         .heading_atom {
-            gap: .3rem;
-            padding: 2.2rem 0rem;
-
+            padding: 2rem 0rem;
+            gap: 0rem;
             .a_heading {
                 font-size: 18px;
+                margin: 0;
+                
             }
-
             .a_para {
                 font-size: 14px;
             }

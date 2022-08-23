@@ -2,11 +2,11 @@
     display: flex;
     height: calc(100vh - 90px);
     overflow: hidden;
-
+    padding-bottom: 5px;
     .right_container{
         height: 100%;
         overflow: hidden;
         overflow-y: scroll;
-        width: -webkit-fill-available;
+        width: -webkit-fill-available   ;
     }
 }

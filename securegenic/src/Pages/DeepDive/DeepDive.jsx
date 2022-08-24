@@ -57,7 +57,7 @@ const DeepDive = () => {
                   return (
                     <div className="app">
                       <div className="icon"><img src={app.img} alt="Error" /></div>
-                      <div className="name_box"><p className="name">{app.name}</p> <p className="number">{app.value}</p></div>
+                      <div className="name_box"><p className="name">{app.name}</p> <p className="number" >{app.value}</p></div>
                     </div>
                   )
                 })

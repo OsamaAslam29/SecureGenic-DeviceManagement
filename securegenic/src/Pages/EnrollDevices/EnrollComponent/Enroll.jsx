@@ -30,7 +30,7 @@ const enrollDevice = [
         para: "Once done it will ask for default launcher selection. Please choose “Securegenic” and press always \n then restart the device."
 
     },
-      
+
     {
         heading: " Step 4: Verify Setup",
         img: d,
@@ -43,7 +43,7 @@ const enrollDevice = [
         para: "Now, Login to Web admin console here or contact your IT department for further steps"
 
     }
-    
+
 ]
 
 const Enroll = () => {
@@ -56,14 +56,12 @@ const Enroll = () => {
             </div>
             <div className="border"></div>
             <div className="enrol_devices">
-                <div className="flex">
+                <div className="enroll_flex">
                     {
                         enrollDevice.map((enroll) => {
                             return (
                                 <div className="e_devices">
-                                    <div className="image">
-                                        <img src={enroll.img} alt="" />
-                                    </div>
+                                    <div className="image"><img src={enroll.img} alt="Error" /></div>
                                     <GoPrimitiveDot className='size' />
                                     <div className="e_heading">
                                         <div className="heading">{enroll.heading}</div>

@@ -18,7 +18,7 @@ const Alert = () => {
                 <div className="line">
                     <div className="text_box">
                         <div className="f-text">Upload Image</div>
-                        <input type="text"/>
+                        <input type="text" />
                     </div>
                     <div className="text_box">
                         <div className="f-text">Description</div>
@@ -28,20 +28,20 @@ const Alert = () => {
                 <div className="line">
                     <div className="text_box">
                         <div className="f-text">Upload Apk</div>
-                        <input type="text"  />
+                        <input type="text" />
                     </div>
                     <div className="text_box">
                         <div className="f-text">Version</div>
                         <input type="text" placeholder='Version' />
                     </div>
                 </div>
-                    <div className="text_button">
-                        <button>Save</button>
-                        <button>Cancel</button>
-                    </div>
-          
+                <div className="text_button">
+                    <button>Save</button>
+                    <button>Cancel</button>
+                </div>
+
             </div>
-      </div>
+        </div>
     )
 }
 

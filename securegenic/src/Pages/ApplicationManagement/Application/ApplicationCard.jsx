@@ -1,6 +1,7 @@
 // ********** All imports ***********
 import React from 'react'
 import { FaPlus } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import './ApplicationCard.scss'
 import Heading from '../../../Components/0-Atoms/Heading/Heading'
 // ********** Body of application starts***********
@@ -12,8 +13,10 @@ const ApplicationCard = () => {
         <div className="application_button">
 
           <button>
-            <div className="icon"><FaPlus /> </div>
-            <div className="text">Add Application</div>
+          <Link to="/Alert" style={{ textDecoration: "none" }}>
+            <button><FaPlus /><div className="text">Add Application</div></button>
+          </Link>
+            
           </button>
 
         </div>

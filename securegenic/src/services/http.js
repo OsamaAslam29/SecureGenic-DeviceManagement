@@ -1,0 +1,19 @@
+import axios from "axios";
+
+axios.defaults.baseURL = process.env.REACT_APP_API_URL;
+
+let token =
+  "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZThkY2E1NzAxOTFmNTNhN2UzMDkxMjE5OGRkM2Q0NzE3NWJkNDY5NjM2MDdjMjk0MTJmOWU5ZTdiOWY0Zjk3NGMzMzVmOTZkYjM3ZmZkMGQiLCJpYXQiOjE1OTIyOTgzMTIsIm5iZiI6MTU5MjI5ODMxMiwiZXhwIjoxNjIzODM0MzEyLCJzdWIiOiIxMSIsInNjb3BlcyI6W119.ayl7YH3CHWLwo4Ln2AIdxsqi3LVmMkTio5guTb1xn-AlU-JV961ePTkzkQ9pFPv-siKL7wZXspcsWeExOFj36nl8CkB8h82YYnbv-xtIuwVZ_K8kHieePjBVBKY1aV3veG7GtgUJJVpBzQ6QiZjAjmxKtmwr7ezs-TO29ofxal9HHIe5RVdHtqG_D1SYfMidhhAraGoims2HussZ0ljlZFD_PXh_luts-Sc1zOoGuXhX0pT6ob2HdEJ-oVpewQBW8RJGF3S07w56Axya4vsp_tkhPYLLxjQ9MZD-XRJbSUM4pambF5fheIee1zmg4MVe1QZZ0jnvTSeJSU2ltZS2KPW6PCq8_IjSKqZa7Ls9wHmkdLwg9S4VJ8VP29jABnAflk63ex7jxmfB2cjG4w4S4pfuBNXxRnTzBO--NO9duMQJDLf_mcOps3xMsDCWIRR0TGRGOy3eAL35XdZhzpUzs8TIkwel8lw89tysHj9M15zNn72MjPiceDhG6lA9QVo1_2IvJfBWTLvepqFby8kANWLGTFjCuZkl6MyezU_y28oz46NFFrFTYpbne3q8lq75gm9AmVmX5IyfTFkZizNb3Jn9BgQCO8tI0FlESD8k70ltPy0ADkYfRm2d54S0-rbwNWUlD-pkjDTtReHod23LoYpQCA_sKKP7uobumrti_8M";
+
+const http = {
+  get: axios.get,
+  post: axios.post,
+  delete: axios.delete,
+  put: axios.put,
+};
+function setJWT() {
+  axios.defaults.headers.common["Authorization"] = token;
+  // localStorage.getItem("token");
+}
+
+export { http, setJWT };

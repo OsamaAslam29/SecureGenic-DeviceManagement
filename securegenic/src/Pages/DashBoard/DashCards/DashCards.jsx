@@ -7,7 +7,6 @@ import user from '../../../Assets/Dashboard/users.png'
 import role from '../../../Assets/Dashboard/roles.png'
 import Heading from '../../../Components/0-Atoms/Heading/Heading'
 import DonutChart from "react-donut-chart";
-
 import {
   LineChart,
   Line,
@@ -50,26 +49,26 @@ const CardsData = [
 // *************** Function for Chart **********************
 const data = [
   {
-    name: "osama",
+    name: "Aepl",
     uv: 500,
 
     amt: 2400
   },
   {
-    name: "Baber",
+    name: "Bel-connect",
     uv: 600,
 
     amt: 2210
   },
   {
-    name: "Mudassar",
+    name: "Transworld",
     uv: 2000,
     amt: 2290
   },
 
 ];
 
-// function for donut charts
+// *************** function for donut charts **********************
 
 const reactDonutChartdata = [
   {
@@ -112,6 +111,7 @@ const reactDonutChartOnMouseEnter = (item) => {
   let color = reactDonutChartdata.find((q) => q.label === item.label).color;
   reactDonutChartStrokeColor = color;
 };
+// *************** Body of component starts **********************
 
 const DashCards = () => {
   return (

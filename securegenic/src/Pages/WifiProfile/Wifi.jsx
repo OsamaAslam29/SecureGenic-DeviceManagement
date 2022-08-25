@@ -1,8 +1,9 @@
+// *****************  All imports *************
 import React from 'react'
 import './Wifi.scss'
 import { FiPlusSquare } from 'react-icons/fi';
 import Heading from '../../Components/0-Atoms/Heading/Heading'
-
+// ***************** Body of WIFI page start *************
 const Wifi = () => {
   return (
     <div className='wifi_container'>

@@ -1,18 +1,17 @@
     .heading_atom {
         display: flex;
         flex-direction: column;
-        // gap: .3rem;
         padding: 3rem 0rem;
 
         .a_heading {
             margin: 0;
-            font-size: 28px;
+            font-size: 25px;
             font-weight: bold;
         }
 
         .a_para {
             font-weight: 400;
-            font-size: 22px;
+            font-size: 20px;
         }
 
     }
@@ -22,7 +21,6 @@
     @media screen and (max-width:1400px) {
         .heading_atom {
             padding: 2rem 0rem;
-            gap: 0rem;
 
             .a_heading {
                 font-size: 18px;
@@ -36,13 +34,13 @@
         }
     }
 
-    @media screen and (max-width:990px) {
+    @media screen and (max-width:700px) {
         .heading_atom {
-            gap: .2rem;
             padding: 1rem 0rem;
 
             .a_heading {
                 font-size: 13px;
+                margin: 0;
             }
 
             .a_para {

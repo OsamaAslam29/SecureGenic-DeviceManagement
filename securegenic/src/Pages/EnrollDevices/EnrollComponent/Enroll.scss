@@ -1,48 +1,88 @@
-.Enroll_Component{
+.Enroll_Component {
     background: rgb(246, 249, 252);
     padding: 0rem 0.9rem;
-        .android{
-            width: 16rem;
-            padding: 0.5rem 3rem;
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            border-bottom: 3px solid #028cc9;
-            background-color: white;
-        }
-        .border{
-            border-bottom: .5px solid #E4E6EF;;
-        }
-}
-.enrol_devices{
-    display: flex;
-    justify-content: space-around;
-        .e_devices{
-            padding: 2rem 2rem 0 0;
-            display: flex;
-            border-right: 0.5px solid #E4E6EF;
-                .image img{
-                    height: 5rem;
-                }
-                .e_heading{
-                    display: flex;
-                    flex-direction: column;
-                    gap: .5rem;
-                }
-                .heading{
-                    font-size: 16px;
-                    font-weight: 600;
-                
-                }
-                .para{
-                    font-size: 14px;
-                    color: #6D6D6D;
-                    padding-left: 20px;
-                    font-weight: 400;
-                }
+
+    .android {
+        width: 16rem;
+        padding: 0.5rem 3rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        border-bottom: 3px solid #028cc9;
+        background-color: white;
+
+        p {
+            font-size: 1rem;
+            margin: 0;
         }
 
+        img {
+            object-fit: cover;
+        }
+    }
+
+    .border {
+        border-bottom: .5px solid #E4E6EF;
+
+    }
+
+    @media only screen and (max-width: 700px) {
+        .android {
+            width: 11rem;
+            font-size: .6rem;
+            padding: 0.3rem 2rem;
+            gap: .5rem;
+
+            p {
+                font-size: .7rem;
+                margin: 0;
+            }
+
+        }
+
+        .android img {
+            height: 1.2rem;
+        }
+
+    }
 }
+
+.enrol_devices {
+    display: flex;
+    justify-content: space-around;
+
+    .e_devices {
+        padding: 2rem 2rem 0 0;
+        display: flex;
+        border-right: 0.5px solid #E4E6EF;
+
+        .image img {
+            height: 5rem;
+        }
+
+        .e_heading {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+        }
+
+        .heading {
+            font-size: 16px;
+            font-weight: 600;
+
+        }
+
+        .para {
+            font-size: 14px;
+            color: #6D6D6D;
+            padding-left: 20px;
+            font-weight: 400;
+        }
+    }
+
+}
+
 .e_qr {
     display: flex;
     flex-direction: column;
@@ -52,18 +92,72 @@
     gap: 2rem;
     margin-top: -10rem;
     padding-left: 1rem;
-     p{
+
+    p {
         font-size: 13px;
         color: #6D6D6D;
     }
-   
 
 }
-.e_qr img{
+
+.e_qr img {
     width: 250px;
 }
 
-.size{
+.size {
     font-size: 25px;
     color: #028cc9;
+}
+
+@media only screen and (max-width: 700px) {
+    .enrol_devices {
+        flex-direction: column;
+        margin-bottom: 2rem;
+
+        .e_devices {
+            padding: 1rem 0rem 0 0;
+            border: none;
+
+            .image img {
+                height: 3rem;
+            }
+
+            .e_heading {
+                gap: .3rem;
+            }
+
+            .heading {
+                font-size: 12px;
+
+            }
+
+            .para {
+                font-size: 10px;
+            }
+        }
+    }
+
+    .e_qr {
+        border-top: .5px solid #E4E6EF;
+        gap: 1rem;
+        margin-top: 1rem;
+
+        p {
+            font-size: 10px;
+            color: #6D6D6D;
+            margin-bottom: 2rem;
+        }
+
+
+    }
+
+    .e_qr img {
+        margin-top: 2rem;
+        width: 200px;
+    }
+
+    .size {
+        font-size: 20px;
+        color: #028cc9;
+    }
 }

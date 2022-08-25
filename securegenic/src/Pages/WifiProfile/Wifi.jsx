@@ -1,6 +1,6 @@
 import React from 'react'
 import './Wifi.scss'
-import { FaPlus } from 'react-icons/fa';
+import { FiPlusSquare } from 'react-icons/fi';
 import Heading from '../../Components/0-Atoms/Heading/Heading'
 
 const Wifi = () => {
@@ -10,8 +10,8 @@ const Wifi = () => {
         <Heading heading="Manage WiFi Profile" para="Manage WiFi profile on devices"/>
         <div className="wifi_button">
         <button>
-                <div className="icon"><FaPlus/> </div>
-                <div className="text">Add Application</div>
+                <div className="icon"><FiPlusSquare/> </div>
+                <div className="text">Add WIFI</div>
             </button>
         </div>
 

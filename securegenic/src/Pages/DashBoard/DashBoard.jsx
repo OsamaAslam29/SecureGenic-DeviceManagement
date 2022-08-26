@@ -4,13 +4,13 @@ import dashboard from "../../services/dashboard.service";
 import DashCards from "./DashCards/DashCards";
 
 const DashBoard = () => {
-  const dispatch = useDispatch();
-  let [data, setData] = useState();
-  useEffect(() => {
-    setData(dashboard.getDashboardStats(dispatch));
-  }, [dispatch]);
+  const [stat, setStat] = useState();
 
-  console.log("data", data);
+  useEffect(() => {
+    setStat(dashboard.getDashboardStats());
+  }, []);
+
+  console.log("our stats are", stat);
 
   return (
     <>

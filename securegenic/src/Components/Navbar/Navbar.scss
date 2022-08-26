@@ -8,9 +8,20 @@
     background: #fff;
     border-bottom: 1px solid #219bd063;
 }
+.navbar img:hover{ 
+    animation: navbar 1s infinite;
+    animation-timing-function: linear;   
+  }
+@keyframes navbar {
+    0% { transform: scale(.9); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(.9); }
+    
+  }
 .logo img {
     display: flex;
     height: 50px;
+    object-fit: cover;
 }
 
 .login_button {
@@ -30,13 +41,13 @@
 // **************** Media Queries *********
 @media screen and (max-width: 1400px) {
     .navbar {
-        height: 60px;
+        height: 55px;
         padding: 0rem 1.9rem;
     }
 
     .logo img {
         display: flex;
-        height: 43px;
+        height: 40px;
     }
 
     .login_button {

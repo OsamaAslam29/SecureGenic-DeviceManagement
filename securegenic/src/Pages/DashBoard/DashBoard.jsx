@@ -4,7 +4,7 @@ import dashboard from "../../services/dashboard.service";
 import DashCards from "./DashCards/DashCards";
 
 const DashBoard = () => {
-  let [data, setData] = useState();
+  const [data, setData] = useState();
   useEffect(() => {
     setData(dashboard.getDashboardStats());
   }, []);

@@ -11,6 +11,7 @@ import EnrollDevices from '../EnrollDevices/EnrollDevices'
 import Device from '../Devices/Device'
 import Application from '../ApplicationManagement/Application'
 import Alert from '../ApplicationManagement/Application/Alert'
+import Add from "../ApplicationManagement/Application/Add/Add"
 import Wifi from '../WifiProfile/Wifi'
 import Utilities from '../Utilities/Utilities'
 import Administration from '../Administration/Administration'
@@ -35,6 +36,7 @@ const Home = () => {
           <Route path="/Device" component={Device} />
           <Route path="/Application" component={Application} />
           <Route path="/Alert" component={Alert} />
+          <Route path="/Add" component={Add} />
           <Route path="/Wifi" component={Wifi} />
           <Route path="/Location" component={Location} />
           <Route path="/Utilities" component={Utilities} />

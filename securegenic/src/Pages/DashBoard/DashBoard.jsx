@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
 import dashboard from "../../services/dashboard.service";
+// import { useDispatch } from "react-redux";
 import DashCards from "./DashCards/DashCards";
 
 const DashBoard = () => {
-  const [stat, setStat] = useState();
-
+  let [data, setData] = useState();
   useEffect(() => {
-    setStat(dashboard.getDashboardStats());
+    setData(dashboard.getDashboardStats());
   }, []);
 
-  console.log("our stats are", stat);
+  console.log("data", data);
 
   return (
     <>

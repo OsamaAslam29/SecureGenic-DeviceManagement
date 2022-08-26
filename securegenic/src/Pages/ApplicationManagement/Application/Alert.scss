@@ -1,7 +1,17 @@
 .alert_box {
     padding: 2rem 0;
-    height: 100vh;
-    width: 78vw;
+    height: 70vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 0 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.205);
+
+
 
     .heading {
         font-size: 20px;
@@ -36,16 +46,19 @@
 
 .text_box input {
     padding: 0.6rem .5rem;
+    padding-left: 1rem;
     font-size: .8rem;
     width: 23rem;
-    border: .5px solid gray;
+    border: .5px solid rgb(226, 220, 220);
     border-radius: 5px;
     outline: none;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.205);
+
 }
 .text_button{
-    padding: 0rem 5rem;
     display: flex;
-    gap: 1.6rem;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .text_button button {
@@ -53,8 +66,10 @@
     background-color: #095079;
     border-color: #095079;
     border: none;
-    border-radius: 5px;
-    padding: 10px 36px;
+    border-radius: 4px;
+    padding: 8px 36px;
+    box-shadow: 0px 0px 10px 5px rgba(12, 12, 12, 0.205);
+
 }
 .text_button button:hover {
     background-color: black;

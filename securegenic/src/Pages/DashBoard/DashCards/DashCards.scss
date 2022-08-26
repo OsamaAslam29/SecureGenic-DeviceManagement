@@ -38,6 +38,7 @@
                 }
 
                 .count {
+                    padding-left: .5rem;
                     font-size: small;
                     color: white;
                 }
@@ -123,9 +124,9 @@
         }
 
         .donut_title {
-            font-weight: 400;
+            font-weight: 600;
             margin: 10px 0;
-            font-size: 20px;
+            font-size: 22px;
         }
     }
 
@@ -134,14 +135,12 @@
         flex-direction: column;
         align-items: center;
         gap: 20px;
-        // font-family: "SourceSansVariable-Roman";
-        font-weight: 400;
+        font-weight: 600;
         margin: 10px 0;
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .charging {
-        // font-family: "SourceSansVariable-Roman";
         font-weight: 700;
         margin: 10px 0;
         font-size: 20px;

@@ -13,7 +13,7 @@ const ApplicationCard = () => {
         <div className="application_button">
 
           <button>
-          <Link to="/Alert" style={{ textDecoration: "none" }}>
+          <Link to="/Add" style={{ textDecoration: "none" }}>
             <button><FaPlus /><div className="text">Add Application</div></button>
           </Link>
             

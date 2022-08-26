@@ -1,5 +1,5 @@
 .add_application {
-    height: 80vh;
+    height: 83vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,6 +23,7 @@
         text-align: center;
         padding-bottom: 1rem;
     }
+
 }
 
 .inputs {
@@ -33,7 +34,10 @@
     .input_box{
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: .5rem;
+    }
+    ::-webkit-input-placeholder{
+        color: rgb(189, 189, 189);
     }
 
     input {
@@ -53,6 +57,7 @@
     justify-content: center;
     gap: 1rem;
     padding-left: 12px;
+    margin-top: .5rem;
 }
 
 .add_button button {
@@ -69,15 +74,67 @@
 .add_button button:hover {
     background-color: black;
 }
+@media only screen and (max-width: 1150px) {
+    .application {
+        padding: 1rem;
+    
+        .heading {
+            font-size: 18px;
+            padding-bottom: .2rem;
+           
+        }
+        .f-text{
+            font-size: 10px;
 
-@media only screen and (max-width: 1200px) {
-    .add_application {
-        height: 100vh;
+        }
+    
     }
+    .inputs {
+        padding: .7rem;
+        gap: .4rem;
+        .input_box{
+            gap: .1rem;
+        }
+    
+        input {
+            padding: 0.4rem .3rem;
+            padding-left: .5rem;
+            font-size: .5rem;
+            width: 15rem;
+             
+        }
+        ::-webkit-input-placeholder{
+            font-size: .6rem;
+         }
+}
+
+.add_button {
+    gap: .3rem;
+}
+
+.add_button button {
+    padding: 4px 26px;
+
+}
+
+}
+
+@media only screen and (max-width: 700px) {
+    .add_application {
+        height: 80vh;
+    }
+    .application {
+        padding: .8rem;
+    
+        .heading {
+            font-size: 15px;
+            padding-bottom: .2rem;
+        }
 
     .inputs {
         display: flex;
         flex-direction: column;
 
     }
+}
 }

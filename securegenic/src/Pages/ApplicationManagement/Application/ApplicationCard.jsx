@@ -8,20 +8,16 @@ import Heading from '../../../Components/0-Atoms/Heading/Heading'
 const ApplicationCard = () => {
   return (
     <div className='application_card'>
+      <Heading heading="Application Management" para="Manage your mobile application on your devices." />
       <div className="application_container">
-        <Heading heading="Application Management" para="Manage your mobile application on your devices." />
         <div className="application_button">
-
           <button>
-          <Link to="/Add" style={{ textDecoration: "none" }}>
-            <button><FaPlus /><div className="text">Add Application</div></button>
-          </Link>
-            
+            <Link to="/Add" style={{ textDecoration: "none" }}>
+              <button><FaPlus /><div className="text">Add Application</div></button>
+            </Link>
           </button>
-
         </div>
       </div>
-
     </div>
   )
 }

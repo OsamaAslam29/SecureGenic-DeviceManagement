@@ -7,12 +7,11 @@
     height: 100%;
     width: 400px;
     background-color: #fff;
-    overflow-x: hidden; 
+    overflow-x: hidden;
     border-right: 0.5px solid rgba(33, 155, 208, 0.3882352941);
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    padding: 2rem 1.7rem;
+    padding: 2rem 0;
     overflow-y: scroll;
     box-shadow: 2px 4px 12px rgba(96, 108, 128, 0.12);
 }
@@ -22,7 +21,9 @@
     color: #028cc9;
     animation: navbar 1s infinite;
     animation-timing-function: linear;
+    background-color: #eef5f8;
 }
+
 @keyframes navbar {
     0% {
         transform: scale(.9);
@@ -37,10 +38,13 @@
     }
 
 }
+
 .n_icon {
     display: flex;
     align-items: center;
     gap: 1rem;
+    padding: 1rem 0 1rem;
+    padding-left: 2.3rem;
 }
 
 .n_icon img {
@@ -69,17 +73,21 @@
     .sidenav {
         height: 100%;
         width: 320px;
-        gap: 1.6rem;
-        padding: 2.5rem 0 0 1.9rem;
+        // gap: 1.6rem;
+        // padding: 2.5rem 0 0 0rem;
 
     }
+
     .n_icon {
+        padding: .7rem 0 1rem;
+        padding-left: 2rem;
         gap: .5rem;
     }
 
     .n_icon img {
         width: 1.1rem;
     }
+
     .sidenav a {
         font-weight: 400;
         font-size: 15px;
@@ -90,8 +98,9 @@
 @media screen and (max-width: 990px) {
     .sidenav {
         display: none;
-        
+
     }
+
     .aside_login_button {
         display: flex;
     }

@@ -92,77 +92,77 @@
   }
 
 
-  
-  
-  
 }
-
-.main_model {
-  width: 100%;
-  background-color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-  height: 250px;
-  border-radius: 7px;
-  position: relative;
- 
-
-  .model_title {
-    font-size: 20px;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ebedf3;
-  }
-
-  .group {
-    display: flex;
-    flex-direction: column;
-    padding-top: 5px;
-
-    input {
-      width: 350px;
-      outline: none;
-      border: 1px solid #ebedf3;
-      border-radius: 4px;
-      height: 35px;
-      margin-top: 5px;
-      padding-left: 10px;
-      font-size: 12px;
-@media(max-width:730px){
-  width: 100%;
-}
-
+  
+  
+  .main_model {
+    width: 100%;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 250px;
+    border-radius: 7px;
+    position: relative;
+   
+  
+    .model_title {
+      font-size: 20px;
+      padding-top: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ebedf3;
     }
+  
+    .group {
+      display: flex;
+      flex-direction: column;
+      padding-top: 5px;
+  
+      input {
+        width: 350px;
+        outline: none;
+        border: 1px solid #ebedf3;
+        border-radius: 4px;
+        height: 35px;
+        margin-top: 5px;
+        padding-left: 10px;
+        font-size: 12px;
+  @media(max-width:730px){
+    width: 100%;
   }
-
-  .buttons {
-    margin-top: 20px;
-    display: flex;
-    gap: 10px;
-    background-color: #ebedf3;
-
-    button {
-      font-weight: 400;
-      font-size: 14px;
-      font-family: "SourceSansVariable-Roman";
-      padding-left: 15px;
-      padding-right: 15px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      border: none;
-      border-radius: 5px;
+  
+      }
+    }
+  
+    .buttons {
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+      background-color: #ebedf3;
+  
+      button {
+        font-weight: 400;
+        font-size: 14px;
+        font-family: "SourceSansVariable-Roman";
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+  
+    .cross {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      color: grey;
       cursor: pointer;
     }
   }
 
-  .cross {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    color: grey;
-    cursor: pointer;
-  }
-}
+
 
 .ant-modal-header {
 
@@ -187,3 +187,6 @@ padding: unset;
 .ant-modal-close-x{
   display: none !important;
 }
+
+
+

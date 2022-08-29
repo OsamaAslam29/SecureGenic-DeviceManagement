@@ -1,8 +1,9 @@
+//  ***************** All Imports *************
 import React from 'react'
 import "./Admin.scss"
 import { FiPlusSquare } from 'react-icons/fi';
 import Heading from '../../../Components/0-Atoms/Heading/Heading'
-
+//  ***************** Body of Admin page starts *************
 const Admin = () => {
   return (
     <div className='admin_panel'>

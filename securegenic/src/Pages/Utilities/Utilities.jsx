@@ -1,10 +1,10 @@
+
 import React, { useState } from "react";
 import "./Utilities.scss";
 import "antd/dist/antd.css";
 import { CheckOutlined, CloseOutlined } from "@ant-design/icons";
 import { AiOutlineClose } from "react-icons/ai";
 import { Button, Modal ,Switch } from "antd";
-
 import battery from "../../Assets/Utilities/battery.png";
 import bluetooth from "../../Assets/Utilities/bluetooth.png";
 import mike from "../../Assets/Utilities/mike.png";

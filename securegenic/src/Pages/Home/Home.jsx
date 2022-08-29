@@ -10,6 +10,7 @@ import DeepDive from '../DeepDive/DeepDive'
 import EnrollDevices from '../EnrollDevices/EnrollDevices'
 import Device from '../Devices/Device'
 import Application from '../ApplicationManagement/Application'
+import Add from "../ApplicationManagement/Application/Add/Add"
 import Wifi from '../WifiProfile/Wifi'
 import Utilities from '../Utilities/Utilities'
 import Administration from '../Administration/Administration'
@@ -23,31 +24,33 @@ import Tablegroup from '../Group/Tablegroup'
 const Home = () => {
   return (
     <>
-    
-                <Navbar/>
-        <div className='Home_Container'> 
-                <Aside/>
-                <Route exact path="/" component={DashBoard} />
-                <Route path="/DeepDive" component={DeepDive} />
-                <Route path="/EnrollDevices" component={EnrollDevices} />
-                <Route path="/Device" component={Device} />
-                <Route path="/Application" component={Application} />
-                <Route path="/Wifi" component={Wifi} />
-                <Route path="/Location" component={Location} />
-                <Route path="/Utilities" component={Utilities} />
-                <Route path="/Administration" component={Administration} />
-                <Route path="/DeviceHealth" component={DeviceHealth} />
-                <Route path="/Reports" component={Reports} />
-                <Route path="/PrivacyPolicy" component={Reports} />
-                <Route path="/Group" component={Group} />
-                <Route path="/Addgroup" component={Addgroup} />
-                <Route path="/Pushgroup" component={Pushgroup} />
-                <Route path="/Tablegroup" component={Tablegroup} />
-                
+
+      <Navbar />
+      <div className='Home_Container'>
+        <Aside />
+        <div className="right_container">
+          <Route exact path="/" component={DashBoard} />
+          <Route path="/DeepDive" component={DeepDive} />
+          <Route path="/EnrollDevices" component={EnrollDevices} />
+          <Route path="/Device" component={Device} />
+          <Route path="/Application" component={Application} />
+          <Route path="/Add" component={Add} />
+          <Route path="/Wifi" component={Wifi} />
+          <Route path="/Location" component={Location} />
+          <Route path="/Utilities" component={Utilities} />
+          <Route path="/Administration" component={Administration} />
+          <Route path="/DeviceHealth" component={DeviceHealth} />
+          <Route path="/Reports" component={Reports} />
+          <Route path="/PrivacyPolicy" component={Reports} />
+          <Route path="/Group" component={Group} />
+          <Route path="/Addgroup" component={Addgroup} />
+          <Route path="/Pushgroup" component={Pushgroup} />
+          <Route path="/Tablegroup" component={Tablegroup} />
         </div>
-                
+      </div>
+
     </>
   )
-}   
+}
 
 export default Home

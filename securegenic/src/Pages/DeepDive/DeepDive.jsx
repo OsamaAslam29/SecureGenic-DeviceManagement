@@ -10,8 +10,33 @@ import 'react-circular-progressbar/dist/styles.css';
 import "./DeepDive.scss"
 
 // ************ body of component starts ************
+const appBox = [
+  {
+    name: "Android",
+    img: Android,
+    value: 1
+  },
+  {
+    name: "Application",
+    img: Application,
+    value: 4
+  },
+  {
+    name: "WiFi profile",
+    img: Wifi,
+    value: 3
+  },
+  {
+    name: "Groupd",
+    img: Group,
+    value: 0
+  }
+]
+
+// *****************  Body of Deepdive starts *************
 
 const DeepDive = () => {
+
   return (
     <>
       <div className="deepdive_container">
@@ -19,29 +44,29 @@ const DeepDive = () => {
           <p className="title">Securegenic DeepDive</p>
           <p>Get quick & deep insights into your inventory and how they are used.</p>
         </div>
+
         <div className="deepdiv_box">
+          {/* ***************** Platform_box of Deepdive ************* */}
+
           <div className="platforms_box">
             <div className="heading">Platforms Summary</div>
             <div className="total"> <p>Total Devices Enrolled</p> <b>1</b> </div>
+
             <div className="apps_box">
-              <div className="app">
-                <div className="icon"><img src={Android} alt="" /></div>
-                <div className="name_box"><p className="name">Android</p> <p className="number">1</p></div>
-              </div>
-              <div className="app">
-                <div className="icon"><img src={Application} alt="" /></div>
-                <div className="name_box"><p className="name">Applications</p> <p className="number">4</p></div>
-              </div>
-              <div className="app">
-                <div className="icon"><img src={Wifi} alt="" /></div>
-                <div className="name_box"><p className="name">Wifi Profile</p> <p className="number">5</p></div>
-              </div>
-              <div className="app">
-                <div className="icon"><img src={Group} alt="" /></div>
-                <div className="name_box"><p className="name">Groups</p> <p className="number">2</p></div>
-              </div>
+              {
+                appBox.map((app) => {
+                  return (
+                    <div className="app">
+                      <div className="icon"><img src={app.img} alt="Error" /></div>
+                      <div className="name_box"><p className="name">{app.name}</p> <p className="number" >{app.value}</p></div>
+                    </div>
+                  )
+                })
+              }
             </div>
+
           </div>
+          {/* ***************** Inventory_box of Deepdive ************* */}
           <div className="inventory_box">
             <div className="inventory">
               <div className="heading">Inventory Snapshot</div>
@@ -68,6 +93,7 @@ const DeepDive = () => {
               </div>
             </div>
           </div>
+          {/* ***************** License_box of Deepdive ************* */}
           <div className="license_box">
             <div className="heading">License Overview</div>
             <div className="used">License Used</div>

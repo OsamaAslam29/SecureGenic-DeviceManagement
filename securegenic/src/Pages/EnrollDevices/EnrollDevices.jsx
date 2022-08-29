@@ -1,5 +1,4 @@
 import React from 'react'
-import './EnrollDevices.scss'
 import Enroll from './EnrollComponent/Enroll'
 
 const EnrollDevices = () => {

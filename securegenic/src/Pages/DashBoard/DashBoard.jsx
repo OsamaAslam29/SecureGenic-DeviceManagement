@@ -1,12 +1,21 @@
-import React from 'react'
-import DashCards from './DashCards/DashCards'
+import React, { useEffect, useState } from "react";
+import dashboard from "../../services/dashboard.service";
+// import { useDispatch } from "react-redux";
+import DashCards from "./DashCards/DashCards";
 
 const DashBoard = () => {
+  const [data, setData] = useState();
+  useEffect(() => {
+    setData(dashboard.getDashboardStats());
+  }, []);
+
+  console.log("data", data);
+
   return (
     <>
-      <DashCards/>
+      <DashCards />
     </>
-  )
-}
+  );
+};
 
-export default DashBoard
+export default DashBoard;

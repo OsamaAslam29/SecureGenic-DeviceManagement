@@ -1,3 +1,4 @@
+// *****************  CSS Of Cards*************
 .wrape_dashboard {
     display: flex;
     flex-direction: column;
@@ -6,142 +7,151 @@
 
     .dashboard {
         padding: 0rem 0.9rem;
-    }
 
-    .f_card {
-        background-color: #ab4298;
-    }
+        // *****************  CSS Of Cards *************
 
-    .s_card {
-        background-color: #5c9ad3;
-    }
+        .dash_cards_box {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: .7rem;
 
-    .t_card {
-        background-color: #8b78b7;
-    }
+            .card {
+                display: flex;
+                flex-direction: column;
+                gap: .4rem;
+                padding: .8rem;
+                border-radius: .5rem;
+                box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.205);
 
-    .forth_card {
-        background-color: #5ecae6;
-    }
+                .img_box {
+                    width: 33px;
 
-    .dash__card {
-        width: 25rem;
-        height: 8.5rem;
-        padding: 1rem;
-        border-radius: 0.3rem;
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
 
-        @media screen and (max-width: "1300px") {
-            width: 15rem !important;
+                .title {
+                    font-weight: bold;
+                    color: white;
+                }
+
+                .count {
+                    padding-left: .5rem;
+                    font-size: small;
+                    color: white;
+                }
+
+            }
+
         }
 
-        @media screen and (max-width: "1700px") {
-            width: 20rem;
-        }
+        @media only screen and (max-width: 700px) {
+            .dash_cards_box {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
 
-        @media screen and (max-width: "600px") {
-            width: 100% !important;
+                .card {
+                    gap: .4rem;
+                    padding: .5rem;
+
+                    .img_box {
+                        width: 30px;
+                    }
+                }
+            }
+
         }
     }
 
-    .d_cards {
+}
+
+// *****************  CSS Of Graph *************
+.line_graph {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+        text-align: center;
+        font-weight: 400;
+        margin-top: 25px;
+        font-size: 27px;
+    }
+
+    .recharts-default-legend {
+        display: none;
+    }
+
+    .recharts-wrapper {
+        width: 100% !important;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 100%;
-        gap: 1.5rem 0;
+        align-items: center;
+        justify-content: center;
     }
 
-    .line_graph {
-        width: 100%;
+    .recharts-surface {
+        width: 90% !important;
+    }
+}
+
+// *****************  CSS Of Progress bar *************
+
+.donut_main {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+    @media (max-width: 500px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .donut_chart {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        .title {
-            text-align: center;
-            font-family: "SourceSansVariable-Roman";
-            font-weight: 400;
-            margin: 20px 0;
-            font-size: 25px;
+        .donutchart {
+            width: 300px !important;
+            height: 300px !important;
         }
 
-        .recharts-default-legend {
-            display: none;
-        }
-
-        .recharts-wrapper {
-            width: 100% !important;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .recharts-surface {
-            width: 90% !important;
+        .donut_title {
+            font-weight: 600;
+            margin: 10px 0;
+            font-size: 22px;
         }
     }
 
-    .donut_main {
+    .battery {
         display: flex;
-        width: 100%;
-        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        font-weight: 600;
+        margin: 10px 0;
+        font-size: 22px;
+    }
 
-        @media (max-width: 500px) {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
+    .charging {
+        font-weight: 700;
+        margin: 10px 0;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-        .donut_chart {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            .donutchart {
-                width: 300px !important;
-                height: 300px !important;
-            }
-
-            .donut_title {
-                font-family: "SourceSansVariable-Roman";
-                font-weight: 400;
-                margin: 10px 0;
-                font-size: 20px;
-            }
-        }
-
-        .battery {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-            font-family: "SourceSansVariable-Roman";
+        span {
+            font-size: 25px;
             font-weight: 400;
-            margin: 10px 0;
-            font-size: 20px;
-        }
-
-        .charging {
-            font-family: "SourceSansVariable-Roman";
-            font-weight: 700;
-            margin: 10px 0;
-            font-size: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            span {
-                font-size: 25px;
-                font-weight: 400;
-                padding-top: 20px;
-            }
+            padding-top: 20px;
         }
     }
-}
-
-// ********************** For Location Page ******************
-.location_page {
-    padding: 0rem 0.9rem;
 }

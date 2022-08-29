@@ -17,13 +17,15 @@
         .title {
             font-size: 1.2rem;
             font-weight: bold;
+            margin: 0;
         }
+        
     }
-
-    .deepdiv_box {
-        display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
-        gap: 1.5rem;
+//  *****************  Css of Platform_box *************
+        .deepdiv_box {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 1.5rem;
 
         .platforms_box {
             display: flex;
@@ -51,7 +53,7 @@
             .apps_box {
                 display: flex;
                 flex-direction: column;
-                gap: 1rem;
+                gap: 2rem;
 
                 .app {
                     display: flex;
@@ -73,11 +75,14 @@
                         justify-content: space-between;
                         align-items: center;
                         font-size: 1rem;
+                        
                     }
                 }
+                
             }
+         
         }
-
+//  *****************  Css of Inventory_box *************
         .inventory_box {
             display: flex;
             flex-direction: column;
@@ -166,7 +171,7 @@
                 }
             }
         }
-
+//  *****************  Css of License_box *************
         .license_box {
             height: fit-content;
             width: -webkit-fil-available;

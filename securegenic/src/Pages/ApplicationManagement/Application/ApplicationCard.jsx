@@ -11,7 +11,7 @@ const ApplicationCard = () => {
       <Heading heading="Application Management" para="Manage your mobile application on your devices." />
       <div className="application_container">
         <div className="application_button">
-          <button>
+          <button className='shadow'>
             <Link to="/Add" style={{ textDecoration: "none" }}>
               <button><FaPlus /><div className="text">Add Application</div></button>
             </Link>

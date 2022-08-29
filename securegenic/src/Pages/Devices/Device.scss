@@ -1,14 +1,16 @@
 .device_page {
+    height: 100vh;
     width: -webkit-fill-available;
-    padding: 0rem 3rem 3rem 2rem;
+    padding: 0rem 3rem 3rem 1rem;
     background: rgb(246, 249, 252);
 }
 
 .device_search {
-    padding: 2rem;
+    padding: 1.6rem;
     background-color: #fff;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     .label_info {
         color: #028CC9;
@@ -94,7 +96,7 @@
         }
     }
     .search input {
-        padding: 7.4px 7px;
+        padding: 7px 7px;
         font-size: 17px;
     }
 
@@ -105,8 +107,8 @@
 
     .submit {
         margin-right: 1rem;
-        padding: 10px 15px;
-        font-size: 17px;
+        padding: 8px 15px;
+        font-size: 18px;
     }
 
     .device_radio {
@@ -144,7 +146,6 @@
     }
 
     .menus {
-        display: none;
         padding: 8px 10px;
         font-size: 15px;
     }
@@ -165,6 +166,50 @@
         }
         .s_text{
             font-size: 14px;
+        }
+    }
+}
+@media screen and (max-width:700px) {
+    .device_page {
+        padding: 0rem .5rem .5rem .5rem;
+    }
+    .device_search {
+        padding: .3rem;
+    }
+
+    .label_info {
+        font-size: 10px;
+    }
+
+    #optin {
+        font-size: 10px;
+    }
+    .search input {
+        padding: 2px 2px;
+        font-size: 10px;
+    }
+
+    .menus {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+
+    .submit {
+        margin-right: 4px;
+        padding: 4px 6px;
+        font-size: 10px;
+    }
+
+    .device_radio {
+        padding-top: .3rem;
+        gap: .3rem;
+
+        input {
+            width: 12px;
+            height: 12px;
+        }
+        .s_text{
+            font-size: 10px;
         }
     }
 }

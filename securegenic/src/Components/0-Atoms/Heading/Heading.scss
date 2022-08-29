@@ -1,1 +1,42 @@
-   
+.heading_atom{
+    display: flex;
+    flex-direction: column;
+    padding: 2.2rem 0rem;
+
+    .a_heading{
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+    .a_para{
+        font-weight: 400;
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 1400px) {
+    .heading_atom{
+        padding: 2.2rem 0rem;
+    
+        .a_heading{
+            font-size: 18px;
+        }
+    
+        .a_para{
+            font-size: 14px;
+        }
+    }
+}
+@media only screen and (max-width: 700px) {
+    .heading_atom{
+        padding: 1.3rem 0rem;
+    
+        .a_heading{
+            font-size: 16px;
+        }
+    
+        .a_para{
+            font-size: 12px;
+        }
+    }
+}

@@ -7,21 +7,27 @@
     padding: 0rem 3rem;
     background: #fff;
     border-bottom: 1px solid #219bd063;
+
 }
-.navbar img:hover{ 
+
+.navbar img:hover {
     animation: navbar 1s infinite;
-    animation-timing-function: linear;   
-  }
+    animation-timing-function: linear;
+}
+
 @keyframes navbar {
-    0% { transform: scale(.9); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(.9); }
-    
-  }
-.logo img {
-    display: flex;
-    height: 50px;
-    object-fit: cover;
+    0% {
+        transform: scale(.9);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(.9);
+    }
+
 }
 
 .login_button {
@@ -38,7 +44,21 @@
     font-size: 25px;
 }
 
-// **************** Media Queries *********
+.aside_login_button {
+    display: none;
+    gap: .5rem;
+    align-items: center;
+}
+
+.aside_login_button img {
+    height: 25px;
+}
+
+.aside_login_button span {
+    font-size: 20px;
+}
+
+// **************** Media Queries of Navbar*********
 @media screen and (max-width: 1400px) {
     .navbar {
         height: 55px;
@@ -64,6 +84,7 @@
     }
 
 }
+
 @media screen and (max-width:990px) {
     .navbar {
         height: 50px;
@@ -87,11 +108,13 @@
     }
 
 }
+
 // **************** CSS of HameBurger *********
 
 .hameburger {
     display: none;
 }
+
 .main {
     padding: 1rem;
     display: flex;
@@ -123,13 +146,29 @@
     .nav:hover {
         color: #028cc9;
     }
+
+    .nav_login_button {
+        display: flex;
+        gap: .5rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav_login_button img {
+        height: 20px;
+    }
+
+    .nav_login_button span {
+        font-size: 20px;
+    }
 }
+
 @media screen and (max-width: 990px) {
     .hameburger {
         display: block;
     }
-    .login_button{
-              display: none;
-          }
-}
 
+    .login_button {
+        display: none;
+    }
+}

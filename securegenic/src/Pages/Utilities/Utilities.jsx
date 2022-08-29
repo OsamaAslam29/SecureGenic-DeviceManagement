@@ -8,6 +8,7 @@ import { Button, Modal ,Switch } from "antd";
 import battery from "../../Assets/Utilities/battery.png";
 import bluetooth from "../../Assets/Utilities/bluetooth.png";
 import mike from "../../Assets/Utilities/mike.png";
+import Heading from "../../Components/0-Atoms/Heading/Heading"
 
 const card = [
   {
@@ -66,13 +67,8 @@ const handleCancel = () => {
 
   return (
     <div className="Utilities_Page">
-      <div className="heading">Utilities</div>
-
-      <div className="para_text">
-        Collection of nifty utilities to make your device management even more
-        easy.
-      </div>
-
+      <Heading heading="Utilities" para="Collection of nifty utilities to make your device management even more
+        easy."/>
       <div className="main_utiliy_card">
         {card.map((e) => {
           return (

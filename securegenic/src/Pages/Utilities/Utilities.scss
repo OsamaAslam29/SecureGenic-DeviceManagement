@@ -1,6 +1,7 @@
 .Utilities_Page {
   padding-bottom: 30px;
-  width: 100%;
+  width: -webkit-fill-available;
+  height: 100vh;
   background: rgb(246, 249, 252);
 
   .heading {

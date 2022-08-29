@@ -47,8 +47,12 @@ const Navbar = () => {
             onClick={toggleDrawer(anchor, false)}
             onKeyDown={toggleDrawer(anchor, false)}
         >
-            <div className='main'>
+            <div className='main'>           
                 <div className="close"><CloseIcon/></div>
+                <div className="nav_login_button">
+                    <span>Welcome, admin</span>
+                    <img src={n_button} alt="" />
+                </div>
                 <div className="nav"><img src={dash} alt="" /><Link to="/" >Dashboard</Link></div>
                 <div className="nav"><img src={deep} alt="" /><Link to="/DeepDive" >DeepDive</Link></div>
                 <div className="nav"><img src={enroll} alt="" /><Link to="/EnrollDevices" >Enroll Devices</Link></div>
@@ -63,7 +67,6 @@ const Navbar = () => {
                 <div className="nav"><img src={battery} alt="" /><Link to="/Reports" > Reports</Link></div>
                 <div className="nav"><img src={privacy} alt="" /><Link to="/PrivacyPolicy" >Privacy Policy</Link></div>
             </div>
-
         </Box>
     );
     return (

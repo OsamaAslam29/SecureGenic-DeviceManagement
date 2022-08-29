@@ -1,6 +1,7 @@
 // ****************** All imports are here ****************
 import React from 'react'
 import './Aside.scss'
+import n_button from '../../Assets/Navbar/button.svg'
 import { Link } from 'react-router-dom'
 import dash from '../../Assets/Navbar/dashboard.png'
 import wifi from '../../Assets/Navbar/wifi_profile.png'
@@ -18,7 +19,11 @@ import apply from '../../Assets/Navbar/application_management.png'
 // ********** Body of Application component starts***********
 const Aside = () => {
     return (
-        
+        <>
+        <div className="aside_login_button">
+        <span>Welcome, admin</span>
+        <img src={n_button} alt="" />
+    </div>
         <div className="sidenav">
             <div className="n_icon"><img src={dash} alt="" /><Link to="/" >Dashboard</Link></div>
             <div className="n_icon"><img src={deep} alt="" /><Link to="/DeepDive" >DeepDive</Link></div>
@@ -34,6 +39,7 @@ const Aside = () => {
             <div className="n_icon"><img src={battery} alt="" /><Link to="/Reports" > Reports</Link></div>
             <div className="n_icon"><img src={privacy} alt="" /><Link to="/PrivacyPolicy" >Privacy Policy</Link></div>
         </div>
+        </>
     )
 }
 

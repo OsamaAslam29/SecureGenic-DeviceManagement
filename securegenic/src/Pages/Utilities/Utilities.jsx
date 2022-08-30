@@ -4,7 +4,7 @@ import "./Utilities.scss";
 import "antd/dist/antd.css";
 import { CheckOutlined, CloseOutlined } from "@ant-design/icons";
 import { AiOutlineClose } from "react-icons/ai";
-import { Button, Modal ,Switch } from "antd";
+import { Button, Modal, Switch } from "antd";
 import battery from "../../Assets/Utilities/battery.png";
 import bluetooth from "../../Assets/Utilities/bluetooth.png";
 import mike from "../../Assets/Utilities/mike.png";
@@ -43,24 +43,24 @@ const Utilities = () => {
 
 
 
-  
 
 
-// modal
 
-const [isModalVisible, setIsModalVisible] = useState(false);
+  // modal
 
-const showModal = () => {
-  setIsModalVisible(true);
-};
+  const [isModalVisible, setIsModalVisible] = useState(false);
 
-const handleOk = () => {
-  setIsModalVisible(false);
-};
+  const showModal = () => {
+    setIsModalVisible(true);
+  };
 
-const handleCancel = () => {
-  setIsModalVisible(false);
-};
+  const handleOk = () => {
+    setIsModalVisible(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalVisible(false);
+  };
 
 
 
@@ -70,49 +70,51 @@ const handleCancel = () => {
       <Heading heading="Utilities" para="Collection of nifty utilities to make your device management even more
         easy."/>
       <div className="main_utiliy_card">
-        {card.map((e) => {
-          return (
-            <>
-              <div className="card">
-                <div className="card_img" onClick={showModal}>
-                  <img src={e.pic} alt="Image Error" />
-                  <b>{e.percent}</b>
-                </div>
+        {
+          card.map((e) => {
+            return (
+              <>
+                <div className="card">
+                  <div className="card_img" onClick={showModal}>
+                    <img src={e.pic} alt="Image Error" />
+                    <b>{e.percent}</b>
+                  </div>
 
-                <div className="card_text">
-                  <b>{e.heading} </b>
-                  <span>{e.para}</span>
-                  <div className="switch">{e.switch}</div>
+                  <div className="card_text">
+                    <b>{e.heading} </b>
+                    <span>{e.para}</span>
+                    <div className="switch">{e.switch}</div>
+                  </div>
                 </div>
-              </div>
-            </>
-          );
-        })}
+              </>
+            );
+          })
+        }
       </div>
 
-      
 
 
-      
-      <Modal  title="Basic Modal" visible={isModalVisible}  >
-      <div className="main_model">
-        <div className="model_title">ThresHold</div>
 
-        <div className="group">
-          <label>ThresHold Value</label>
-          <input type="number" />
+
+      <Modal title="Basic Modal" visible={isModalVisible}  >
+        <div className="main_model">
+          <div className="model_title">ThresHold</div>
+
+          <div className="group">
+            <label>ThresHold Value</label>
+            <input type="number" />
+          </div>
+
+          <div className="buttons">
+            <button style={{ background: "#00c8c0", color: "white" }} onClick={handleOk} >
+              Save
+            </button>
+            <button style={{ background: "#161c32", color: "white" }} onClick={handleCancel} >
+              Cancel
+            </button>
+          </div>
+          <AiOutlineClose className="cross" onClick={handleCancel} />
         </div>
-
-        <div className="buttons">
-          <button style={{ background: "#00c8c0", color: "white" }} onClick={handleOk} >
-            Save
-          </button>
-          <button style={{ background: "#161c32", color: "white" }} onClick={handleCancel} >
-            Cancel
-          </button>
-        </div>
-        <AiOutlineClose className="cross" onClick={handleCancel}/>
-      </div>
       </Modal>
 
 

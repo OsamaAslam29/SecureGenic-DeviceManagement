@@ -5,11 +5,12 @@ import DashCards from "./DashCards/DashCards";
 
 const DashBoard = () => {
   const [data, setData] = useState();
-  useEffect(() => {
-    setData(dashboard.login());
+  useEffect(async() => {
+   await (dashboard.login());
+    setData(dashboard.getDashboardStats());
   }, []);
 
-  console.log("data", data);
+  console.log("graphData", data);
 
   return (
     <>

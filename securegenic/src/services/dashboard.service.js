@@ -7,16 +7,6 @@ const dashboard = {
   getDashboardStats: async () => {
     setJWT();
 
-    // fetch("https://app.bel-energise.com/api/login", {
-    //   body: "{\"email\":\"zara.shah@viiontech.com\", \"password\"soft100\",\"manufacturer\"asdsa\",\"model\"asdsa,\"platform\"iOS,\"app_version\"1.80}",
-    //   headers: {
-    //     Accept: "application/json",
-    //     "Content-Type": "application/json",
-    //     Token: "sfg999666t673t7t82"
-    //   },
-    //   method: "Get"
-    // })
-
     const [success, error] = await Promisable.asPromise(
       http.get(`${url}?plant_id=161&time=Daily&date=2022-08-01&type=4`)
     );
@@ -36,14 +26,14 @@ const dashboard = {
       app_version: "1.80",
     };
     const [success, error] = await Promisable.asPromise(
-      http.post(`http://app.bel-energise.com/api/login`, data)
+      http.post(`/login`, data)
     );
     if (success) {
-      console.log(success);
+      localStorage.setItem("token",success.data?.result?.token);
+      console.log(success.data.result.token);
     }
 
     return [success, error];
   },
 };
-
 export default dashboard;

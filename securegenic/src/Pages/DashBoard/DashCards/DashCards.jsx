@@ -124,11 +124,13 @@ const DashCards = () => {
             CardsData.map((card) => {
               return (
                 <>
-                  <div className="card" style={{ backgroundColor: `${card.backColor}` }}>
-                    <div className="img_box"><img src={card.img} alt="" /></div>
+                <div>
+                  <div className="card" style={{ backgroundColor: `${card.backColor}` }} >
+                    <div className="img_box"><img src={card.img} alt="Error" /></div>
                     <div className="title">{card.name}</div>
                     <div className="count">{card.value}</div>
                   </div>
+                </div>
                 </>
               )
             })

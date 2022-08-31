@@ -8,13 +8,13 @@ const dashboard = {
     setJWT();
 
     fetch("https://app.bel-energise.com/api/login", {
-      body: "{\"email\":\"zara.shah@viiontech.com\", \"password\":{\"design_token1\":\"Hi\",\"design_token2\":\"Hello\",\"design_token3\":\"World\",\"subject_token1\":\"XYZ\"}, \"recipient\":\"james@sample.com\"}",
+      body: "{\"email\":\"zara.shah@viiontech.com\", \"password\"soft100\",\"manufacturer\"asdsa\",\"model\"asdsa,\"platform\"iOS,\"app_version\"1.80}",
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
         Token: "sfg999666t673t7t82"
       },
-      method: "POST"
+      method: "Get"
     })
 
     // const [success, error] = await Promisable.asPromise(

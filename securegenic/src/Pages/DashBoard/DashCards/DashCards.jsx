@@ -121,10 +121,10 @@ const DashCards = () => {
  {/* ***************** DashBoard Cards ************* */}
         <div className="dash_cards_box">
           {
-            CardsData.map((card) => {
+            CardsData.map((card,index) => {
               return (
                 <>
-                <div>
+                <div key={index+1}>
                   <div className="card" style={{ backgroundColor: `${card.backColor}` }} >
                     <div className="img_box"><img src={card.img} alt="Error" /></div>
                     <div className="title">{card.name}</div>

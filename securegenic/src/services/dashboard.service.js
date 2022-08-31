@@ -36,7 +36,7 @@ const dashboard = {
       app_version: "1.80",
     };
     const [success, error] = await Promisable.asPromise(
-      http.post(`https://app.bel-energise.com/api/login`, data)
+      http.post(`http://app.bel-energise.com/api/login`, data)
     );
     if (success) {
       console.log(success);

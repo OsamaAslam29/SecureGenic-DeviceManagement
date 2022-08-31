@@ -6,7 +6,7 @@ import DashCards from "./DashCards/DashCards";
 const DashBoard = () => {
   const [data, setData] = useState();
   useEffect(() => {
-    setData(dashboard.getDashboardStats());
+    setData(dashboard.login());
   }, []);
 
   console.log("data", data);

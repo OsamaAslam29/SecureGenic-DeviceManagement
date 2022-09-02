@@ -9,6 +9,7 @@ import Reports from '../Reports/Reports'
 import DeepDive from '../DeepDive/DeepDive'
 import EnrollDevices from '../EnrollDevices/EnrollDevices'
 import Device from '../Devices/Device'
+import Filter from '../Devices/Filter'
 import Application from '../ApplicationManagement/Application'
 import Add from "../ApplicationManagement/Application/Add/Add"
 import Wifi from '../WifiProfile/Wifi'
@@ -33,6 +34,7 @@ const Home = () => {
           <Route path="/DeepDive" component={DeepDive} />
           <Route path="/EnrollDevices" component={EnrollDevices} />
           <Route path="/Device" component={Device} />
+          <Route path="/Filter" component={Filter} />
           <Route path="/Application" component={Application} />
           <Route path="/Add" component={Add} />
           <Route path="/Wifi" component={Wifi} />

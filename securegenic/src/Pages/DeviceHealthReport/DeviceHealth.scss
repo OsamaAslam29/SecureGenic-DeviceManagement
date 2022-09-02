@@ -60,6 +60,7 @@
       display: flex;
       justify-content: space-between;
       width: 95%;
+      margin-top: 2rem;
       @media (max-width: 610px) {
         width: 100%;
         flex-direction: column;

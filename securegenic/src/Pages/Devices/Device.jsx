@@ -1,5 +1,6 @@
 import React from 'react'
 import './Device.scss'
+import { Link } from 'react-router-dom';
 import { FaSearch } from 'react-icons/fa';
 import { FcMenu } from 'react-icons/fc';
 import Heading from '../../Components/0-Atoms/Heading/Heading'
@@ -23,7 +24,11 @@ const Device = () => {
         <div className="search">
           <input type="text" placeholder='Search..' />
           <button className="submit"><FaSearch /></button>
-          <span className="menus"><FcMenu /></span>
+
+          <Link to="/Filter" style={{ textDecoration: "none" }}>
+            <span className="menus"><FcMenu /></span>
+          </Link>
+
         </div>
       </div>
 

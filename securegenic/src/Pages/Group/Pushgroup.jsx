@@ -1,13 +1,15 @@
 import React from "react";
 import "./Pushgroup.scss";
 import { Link } from "react-router-dom";
+import Heading from "../../Components/0-Atoms/Heading/Heading";
 const Pushgroup = () => {
   return (
     <div className="main_push">
-      <div className="bold">Push Application Group</div>
+      {/* <div className="bold">Push Application Group</div>
       <div className="para">
         Select a platform, scan a QR code or open a URL, enroll your devices.
-      </div>
+      </div> */}
+      <Heading heading="Push Application Group" para="Select a platform, scan a QR code or open a URL, enroll your devices."/>
       <div className="push_content">
         <div className="title">Push Application Group</div>
         <div className="group">

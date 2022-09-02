@@ -7,7 +7,7 @@ import { FaFileCsv } from "react-icons/fa";
 import { HiOutlineDocument } from "react-icons/hi";
 import { AiFillPrinter } from "react-icons/ai";
 import { FiPlusSquare } from "react-icons/fi";
-import "./Tablegroup.scss";
+// import "./Tablegroup.scss";
 import { Table } from "antd";
 
 const menu = (

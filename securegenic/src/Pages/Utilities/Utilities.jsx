@@ -1,8 +1,7 @@
-
 import React, { useState } from "react";
 import "./Utilities.scss";
 import "antd/dist/antd.css";
-import { CheckOutlined, CloseOutlined } from "@ant-design/icons";
+// import { CheckOutlined, CloseOutlined } from "@ant-design/icons";
 import { AiOutlineClose } from "react-icons/ai";
 import { Button, Modal, Switch } from "antd";
 import battery from "../../Assets/Utilities/battery.png";
@@ -71,10 +70,10 @@ const Utilities = () => {
         easy."/>
       <div className="main_utiliy_card">
         {
-          card.map((e) => {
+          card.map((e,index) => {
             return (
-              <>
-                <div className="card">
+             
+                <div className="card" key={index.toString()}>
                   <div className="card_img" onClick={showModal}>
                     <img src={e.pic} alt="Image Error" />
                     <b>{e.percent}</b>
@@ -86,7 +85,7 @@ const Utilities = () => {
                     <div className="switch">{e.switch}</div>
                   </div>
                 </div>
-              </>
+              
             );
           })
         }

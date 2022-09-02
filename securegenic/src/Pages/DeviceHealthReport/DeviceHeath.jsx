@@ -1,18 +1,160 @@
-// *****************  All imports *************
-import React from 'react'
+import React from "react";
 import './DeviceHealth.scss'
-import Heading from '../../Components/0-Atoms/Heading/Heading'
-// *****************  Body of Device Health page starts *************
-const DeviceHealth = () => {
-  return (
-    <div className='device_health'>
-      <div className="divice_container">
-        <Heading heading="Device Health Report" para="Get quick & deep insights into your inventory and how they are used."/>
-        
-      </div>
-        
-    </div>
-  )
-}
+import "antd/dist/antd.css";
+import { Button, Dropdown, Menu } from "antd";
+// import { AiFillDelete } from "react-icons/ai";
+import { AiFillFilePdf } from "react-icons/ai";
+import { FaFileCsv } from "react-icons/fa";
+import { HiOutlineDocument } from "react-icons/hi";
+import { AiFillPrinter } from "react-icons/ai";
+import { Table } from "antd";
+import Heading from "../../Components/0-Atoms/Heading/Heading";
 
-export default DeviceHealth
+const menu = (
+  <Menu
+    items={[
+      {
+        key: "1",
+        label: (
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.antgroup.com"
+          >
+            1st menu item
+          </a>
+        ),
+      },
+      {
+        key: "2",
+        label: (
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.aliyun.com"
+          >
+            2nd menu item
+          </a>
+        ),
+      },
+      {
+        key: "3",
+        label: (
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.luohanacademy.com"
+          >
+            3rd menu item
+          </a>
+        ),
+      },
+    ]}
+  />
+);
+
+const DeviceHeath = () => {
+  const columns = [
+    {
+      title: "Sr#",
+      dataIndex: "key",
+    },
+    {
+      title: "Device ID",
+      dataIndex: "id",
+      sorter: {
+        compare: (a, b) => a.groupname - b.groupname,
+        multiple: 3,
+      },
+    },
+    {
+      title: "Battery %",
+      dataIndex: "battery",
+      sorter: {
+        compare: (a, b) => a.application - b.application,
+        multiple: 2,
+      },
+    },
+    {
+      title: "Is Charging",
+      dataIndex: "charging",
+      sorter: {
+        compare: (a, b) => a.version - b.version,
+        multiple: 1,
+      },
+    },
+    {
+      title: "Charging Time Left",
+      dataIndex: "time",
+      sorter: {
+        compare: (a, b) => a.date - b.date,
+        multiple: 1,
+      },
+    },
+    {
+      title: "Up Time",
+      dataIndex: "up",
+      sorter: {
+        compare: (a, b) => a.action - b.action,
+        multiple: 1,
+      },
+    },
+  ];
+  const data = [
+    {
+      key: "1",
+      id: "901091171441BB105",
+      battery: "84%",
+      charging: "Not Charging",
+      time: "00:00:00",
+      up: "00:02:20",
+    },
+  ];
+
+  const onChange = (pagination, filters, sorter, extra) => {
+    console.log("params", pagination, filters, sorter, extra);
+  };
+  return (
+    <div className="main_table">
+      <Heading heading="Device Health Report" para="Get quick & deep insights into your inventory and how they are used."/>
+
+      <div className="icon_content">
+        <div className="icons_main">
+          <div className="icon">
+            <AiFillPrinter />
+          </div>
+          <div className="icon">
+            <HiOutlineDocument />
+          </div>
+          <div className="icon">
+            <FaFileCsv />
+          </div>
+          <div className="icon">
+            <AiFillFilePdf />
+          </div>
+
+          <div className="btn">
+            <Dropdown overlay={menu} placement="bottom" arrow>
+              <Button>Filter</Button>
+            </Dropdown>
+          </div>
+        </div>
+
+        <div className="group">
+          <label>Search :</label>
+          <input type="text" />
+        </div>
+      </div>
+
+      <div className="table_content">
+        <Table columns={columns} dataSource={data} onChange={onChange} />
+      </div>
+      Showing 1 to 1 of 1 entries (filtered from 0 total entries)
+    </div>
+  );
+};
+
+export default DeviceHeath;
+
+
+

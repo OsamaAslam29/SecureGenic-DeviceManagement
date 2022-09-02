@@ -54,9 +54,9 @@ const DeepDive = () => {
 
             <div className="apps_box">
               {
-                appBox.map((app) => {
+                appBox.map((app,index) => {
                   return (
-                    <div className="app">
+                    <div className="app" key={index.toString()}>
                       <div className="icon"><img src={app.img} alt="Error" /></div>
                       <div className="name_box"><p className="name">{app.name}</p> <p className="number" >{app.value}</p></div>
                     </div>

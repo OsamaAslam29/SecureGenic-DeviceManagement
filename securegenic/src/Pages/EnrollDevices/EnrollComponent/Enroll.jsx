@@ -60,9 +60,9 @@ const Enroll = () => {
             <div className="enrol_devices">
                 <div className="enroll_flex">
                     {
-                        enrollDevice.map((enroll) => {
+                        enrollDevice.map((enroll,index) => {
                             return (
-                                <div className="e_devices">
+                                <div className="e_devices" key={index.toString()}>
                                     <div className="image"><img src={enroll.img} alt="Error" /></div>
                                     <GoPrimitiveDot className='size' />
                                     <div className="e_heading">

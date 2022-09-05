@@ -11,7 +11,7 @@ const addData = [
         name: "Package Name",
         placeholder: "Package Name"
     },
-    {   
+    {
         type: "file",
         name: "Upload Image",
         placeholder: "Name"
@@ -39,14 +39,12 @@ const Add = () => {
                 <div className="heading">Application</div>
                 <div className="inputs">
                     {
-                        addData.map((add,index) => {
+                        addData.map((add, index) => {
                             return (
-                              
                                 <div className="input_box" key={index.toString()}>
                                     <div className="f-text">{add.name}</div>
                                     <input type={add.type} placeholder={add.placeholder} />
                                 </div>
-                                
                             )
                         })
                     }
@@ -56,7 +54,6 @@ const Add = () => {
                     <button>Cancel</button>
                 </div>
             </div>
-
         </div>
     )
 }

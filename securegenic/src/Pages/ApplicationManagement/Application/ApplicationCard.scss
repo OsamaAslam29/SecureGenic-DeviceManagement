@@ -34,3 +34,113 @@
             
     }
 }
+.card_main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+    @media(max-width:600px){
+     padding-left: 10px;
+     padding-right: 10px;
+     
+     }
+    @media(max-width:550px){
+     justify-content: center;
+     align-items: center;
+     padding-left: unset;
+padding-right: unset;
+     }
+    .card {
+      margin-top: 1rem ;
+      background: #ffffff;
+      border: 0.5px solid #dadada;
+      box-shadow: 0px 20px 39px rgb(235 235 235 / 25%);
+      border-radius: 5px;
+      background: #fff;
+      overflow: hidden;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      width: 250px;
+      box-shadow: 7px 2px 6px 0px rgb(0 0 0 / 21%);
+      @media(max-width:600px){
+     margin-left: unset;
+       }
+
+      .card_content {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .card_title {
+        background: #f5f5f6;
+        text-align: center;
+        font-weight: 600;
+        font-size: 14px;
+        overflow: hidden;
+        white-space: nowrap;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .card_date {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 150%;
+        color: #6f6f6f;
+        display: flex;
+
+        align-items: center;
+        padding-top: 20px;
+        text-align: left;
+        justify-content: space-between;
+        .date {
+          font-size: 15px;
+        }
+      }
+
+      .card_list {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 150%;
+        color: #6f6f6f;
+        display: flex;
+        text-align: left;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        justify-content: space-between;
+        cursor: pointer;
+
+        .details {
+          font-size: 15px;
+          cursor: pointer;
+        }
+      }
+
+      .icons {
+        border-top: 1px solid #ebedf3;
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        align-items: center;
+        gap: 20px;
+        .lock {
+          font-size: 20px;
+          color: green;
+          cursor: pointer;
+        }
+        .del {
+          font-size: 20px;
+          color: #028cc9;
+          cursor: pointer;
+        }
+      }
+    }
+  }

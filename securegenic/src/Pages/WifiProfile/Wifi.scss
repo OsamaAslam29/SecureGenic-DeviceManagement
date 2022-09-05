@@ -1,27 +1,25 @@
 .wifi_container {
-    display: flex;
     height: 100vh;
     width: -webkit-fill-available;
     background: rgb(246, 249, 252);
-}
-.wifi_profile {
-    padding: 1rem 2rem;
+    padding: 0 2rem 3rem 0.9rem;
+
 }
 .wifi_button{
-    padding:  1.2rem 1.2rem;
-    width: 85vw;
+    width: -webkit-fill-available;
     display: flex;
     justify-content: flex-end;
     border-bottom: 1px solid rgb(226, 220, 220);
     button{
         display: flex;
         gap: .5rem;
-        padding: 1rem 3rem;
+        padding: .5rem 3rem;
         color: #FFFFFF;
         background-color: #028CC9;
         border: none;
         outline: none;
         border-radius: 5px;
+        margin-bottom: 10px;
           .icon{
                 font-size: 1.5rem;
             }
@@ -32,12 +30,9 @@
         }
 }
 @media screen and (max-width:1400px) {
-    .wifi_profile {
-        padding: 0rem 0.9rem;
-    }
+
     .wifi_button{
-        padding:  0.9rem 0.9rem;
-        width: 76vw;
+        width: -webkit-fill-available;;
         button{
             gap: .5rem;
             padding: .5rem 3rem;

@@ -1,6 +1,8 @@
 .main_group {
-  width: 100%;
-  padding: 0rem 1rem;
+  width: -webkit-fill-available;
+  padding: 0 2rem 6rem 0.9rem;
+  background: rgb(246, 249, 252);
+
   .title {
     width: 100%;
     font-weight: 600;
@@ -8,10 +10,11 @@
     line-height: 11px;
     padding-top: 50px;
     padding-left: 30px;
-    @media(max-width:600px){
-     padding-left: unset;
+
+    @media(max-width:600px) {
+      padding-left: unset;
       text-align: center;
-     }
+    }
   }
 
   .para {
@@ -21,30 +24,31 @@
     margin-top: 0;
     margin-bottom: 1rem;
     padding-top: 20px;
-    @media(max-width:600px){
-     line-height: 25px;
-     text-align: center;
-     padding-left: 10px;
-     padding-right: 10px;
+
+    @media(max-width:600px) {
+      line-height: 25px;
+      text-align: center;
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 
   .buttons {
     display: flex;
-    width: 95%;
     padding-left: 70px;
     gap: 20px;
     justify-content: flex-end;
     padding-top: 50px;
     border-bottom: 1px solid #ebedf3;
     padding-bottom: 20px;
- 
-    @media(max-width:600px){
-   padding-left: unset;
+
+    @media(max-width:600px) {
+      padding-left: unset;
       justify-content: center;
       width: 100%;
       padding-top: unset;
     }
+
     button {
       padding: 10px 36px;
       color: #ffffff;
@@ -60,47 +64,57 @@
       justify-content: center;
       align-items: center;
       gap: 10px;
-      @media(max-width:600px){
-     font-size: 12px;
-     padding: 5px 26px;
+
+      @media(max-width:600px) {
+        font-size: 12px;
+        padding: 5px 26px;
       }
-      @media(max-width:350px){
-     font-size: 10px;
-     padding: 3px 20px;
+
+      @media(max-width:350px) {
+        font-size: 10px;
+        padding: 3px 20px;
       }
     }
   }
-
+.card_flex{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
   .card_main {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    
-    @media(max-width:600px){
-     padding-left: 10px;
-     padding-right: 10px;
-     
-     }
-    @media(max-width:550px){
-     justify-content: center;
-     align-items: center;
-     padding-left: unset;
-padding-right: unset;
-     }
+
+    @media(max-width:600px) {
+      padding-left: 10px;
+      padding-right: 10px;
+
+    }
+
+    @media(max-width:550px) {
+      justify-content: center;
+      align-items: center;
+      padding-left: unset;
+      padding-right: unset;
+    }
+
     .card {
-      margin-top: 1rem ;
+      margin-top: 1rem;
       background: #ffffff;
       border: 0.5px solid #dadada;
-      box-shadow: 0px 20px 39px rgb(235 235 235 / 25%);
+      box-shadow: 7px 2px 6px 0px rgb(0 0 0 / 21%);
+      
       border-radius: 5px;
       background: #fff;
       overflow: hidden;
       margin-bottom: 20px;
       padding-bottom: 20px;
       width: 250px;
-      @media(max-width:600px){
-     margin-left: unset;
-       }
+
+      @media(max-width:600px) {
+        margin-left: unset;
+      }
 
       .card_content {
         padding-left: 20px;
@@ -137,6 +151,7 @@ padding-right: unset;
         padding-top: 20px;
         text-align: left;
         justify-content: space-between;
+
         .date {
           font-size: 15px;
         }
@@ -170,11 +185,13 @@ padding-right: unset;
         padding-top: 10px;
         align-items: center;
         gap: 20px;
+
         .lock {
           font-size: 20px;
           color: green;
           cursor: pointer;
         }
+
         .del {
           font-size: 20px;
           color: #028cc9;
@@ -184,17 +201,3 @@ padding-right: unset;
     }
   }
 }
-// =======
-// .Group_page{
-//     height: 100vh;
-//     width: -webkit-fill-available;
-//     background: rgb(246, 249, 252);
-// }
-// .group_container{
-//     padding: 0rem 0.9rem;
-
-// }
-// .group_button{
-//     float: right;
-// }
-// >>>>>>> 2245b067e3360c7bfd6ffb88411b0df7cc75e28d

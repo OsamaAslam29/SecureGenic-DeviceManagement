@@ -2,26 +2,32 @@ import React from 'react'
 import './Add.scss'
 const addData = [
     {
+        type: "text",
         name: "Name",
         placeholder: "Name"
     },
     {
+        type: "text",
         name: "Package Name",
         placeholder: "Package Name"
     },
-    {
+    {   
+        type: "file",
         name: "Upload Image",
         placeholder: "Name"
     },
     {
+        type: "text",
         name: "Description",
         placeholder: "Description"
     },
     {
+        type: "file",
         name: "Upload Apk",
         placeholder: "Name"
     },
     {
+        type: "text",
         name: "Version",
         placeholder: "Version"
     },
@@ -33,14 +39,14 @@ const Add = () => {
                 <div className="heading">Application</div>
                 <div className="inputs">
                     {
-                        addData.map((add) => {
+                        addData.map((add,index) => {
                             return (
-                                <>
-                                <div className="input_box">
+                              
+                                <div className="input_box" key={index.toString()}>
                                     <div className="f-text">{add.name}</div>
-                                    <input type="text" placeholder={add.placeholder} />
+                                    <input type={add.type} placeholder={add.placeholder} />
                                 </div>
-                                </>
+                                
                             )
                         })
                     }

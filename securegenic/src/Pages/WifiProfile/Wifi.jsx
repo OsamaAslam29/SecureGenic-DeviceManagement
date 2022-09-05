@@ -21,18 +21,18 @@ const Wifi = () => {
       <div className="card_main">
         <div className="card">
           <div className="card_title">
-            Group Name:
-            <div className="name">Fahad</div>
+          Wifi Profile Name:
+            <div className="name">Viion Office</div>
           </div>
 
           <div className="card_content">
             <div className="card_date">
-              Date and Time
-              <div className="date">2-06-2022 15:24</div>
+            SSID
+              <div className="date">Viion 2</div>
             </div>
             <div className="card_list">
-              Device List
-              <div className="view">View Details</div>
+            Password
+              <div className="view">viion 3000</div>
             </div>
             <div className="icons">
               <BsLockFill className="lock" />

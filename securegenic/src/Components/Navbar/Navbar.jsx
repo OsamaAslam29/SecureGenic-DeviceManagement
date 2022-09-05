@@ -90,8 +90,7 @@ const Navbar = () => {
                         <React.Fragment key={anchor}>
 
                             <div className="menu">
-              
-                                <MenuIcon onClick={toggleDrawer(anchor, true)} />
+                               <MenuIcon onClick={toggleDrawer(anchor, true)} />
                             </div>
                             <SwipeableDrawer
                                 anchor={anchor}

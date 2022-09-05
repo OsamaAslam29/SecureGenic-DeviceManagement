@@ -1,4 +1,5 @@
 import React from 'react'
+import CloseIcon from '@mui/icons-material/Close';
 import './Add.scss'
 const addData = [
     {
@@ -36,6 +37,7 @@ const Add = () => {
     return (
         <div className='add_application'>
             <div className="application">
+            <div className="close_button"><CloseIcon/></div>
                 <div className="heading">Application</div>
                 <div className="inputs">
                     {
@@ -55,6 +57,7 @@ const Add = () => {
                 </div>
             </div>
         </div>
+        
     )
 }
 

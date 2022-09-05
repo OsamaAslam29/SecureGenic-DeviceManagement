@@ -1,9 +1,11 @@
 .deepdive_container {
     width: -webkit-fill-available;
-    margin: 2rem 1rem;
+    padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    background: rgb(246, 249, 252);
+    
 
     .title_box {
         display: flex;

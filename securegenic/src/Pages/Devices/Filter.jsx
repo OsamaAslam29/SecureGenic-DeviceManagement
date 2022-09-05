@@ -23,7 +23,7 @@ const menu = (
             rel="noopener noreferrer"
             href="https://www.antgroup.com"
           >
-            1st menu item
+            Sr#
           </a>
         ),
       },
@@ -34,8 +34,8 @@ const menu = (
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.aliyun.com"
-          >
-            2nd menu item
+          > 
+          Group Name 
           </a>
         ),
       },
@@ -46,8 +46,29 @@ const menu = (
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.luohanacademy.com"
-          >
-            3rd menu item
+          >PIN
+          </a>
+        ),
+      },
+      {
+        key: "4",
+        label: (
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.luohanacademy.com"
+          >Last Update
+          </a>
+        ),
+      },
+      {
+        key: "4",
+        label: (
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.luohanacademy.com"
+          >Action
           </a>
         ),
       },

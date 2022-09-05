@@ -7,135 +7,152 @@
 
 
 
-.application {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0px 27px 136px rgb(129 137 190 / 9%), 0px 6.0308px 30.3774px rgb(129 137 190 / 5%), 0px 1.79553px 9.04414px rgb(129 137 190 / 4%);
-
-    .heading {
-        font-size: 20px;
-        color: #163561;
-        font-weight: bold;
-        text-align: center;
-        padding-bottom: 1rem;
-    }
-
-}
-
-.inputs {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 1rem;
-    gap: 1rem;
-    .input_box{
+    .application {
         display: flex;
         flex-direction: column;
-        gap: .5rem;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        border-radius: 8px;
+        position: relative;
+        // box-shadow: 0px 27px 136px rgba(2, 2, 2, 0.09), 0px 6.0308px 30.3774px rgba(2, 2, 2, 0.05), 0px 1.79553px 9.04414px rgba(8, 8, 8, 0.04);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+        .close_button{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .heading {
+            font-size: 20px;
+            color: #163561;
+            font-weight: bold;
+            text-align: center;
+            padding-bottom: 1rem;
+        }
+
     }
-    ::-webkit-input-placeholder{
-        color: rgb(189, 189, 189);
-    }
 
-    input {
-        padding: 0.6rem .5rem;
-        padding-left: 1rem;
-        font-size: .8rem;
-        width: 23rem;
-        border: .5px solid rgb(226, 220, 220);
-        border-radius: 5px;
-        outline: pink;
-        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.205);
-    }
-}
-
-.add_button {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    padding-left: 12px;
-    margin-top: .5rem;
-}
-
-.add_button button {
-    color: #FFFFFF;
-    background-color: #095079;
-    border-color: #095079;
-    border: none;
-    border-radius: 4px;
-    padding: 8px 36px;
-    box-shadow: 0px 0px 10px 5px rgba(12, 12, 12, 0.205);
-
-}
-
-.add_button button:hover {
-    background-color: black;
-}
-@media only screen and (max-width: 1150px) {
-    .application {
+    .inputs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         padding: 1rem;
-    
-        .heading {
-            font-size: 18px;
-            padding-bottom: .2rem;
-           
-        }
-        .f-text{
-            font-size: 10px;
+        gap: 1rem;
 
+        .input_box {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
         }
-    
-    }
-    .inputs {
-        padding: .7rem;
-        gap: .4rem;
-        .input_box{
-            gap: .1rem;
+
+        ::-webkit-input-placeholder {
+            color: rgb(189, 189, 189);
         }
-    
+
         input {
-            padding: 0.4rem .3rem;
-            padding-left: .5rem;
-            font-size: .5rem;
-            width: 15rem;
-             
+            padding: 0.6rem .5rem;
+            padding-left: 1rem;
+            font-size: .8rem;
+            width: 23rem;
+            border: .5px solid rgb(226, 220, 220);
+            border-radius: 5px;
+            outline: pink;
+            // box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.205);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+
         }
-        ::-webkit-input-placeholder{
-            font-size: .6rem;
-         }
-}
-
-.add_button {
-    gap: .3rem;
-}
-
-.add_button button {
-    padding: 4px 26px;
-
-}
-
-}
-
-@media only screen and (max-width: 700px) {
-    .add_application {
-        height: 80vh;
     }
-    .application {
-        padding: .8rem;
-    
-        .heading {
-            font-size: 15px;
-            padding-bottom: .2rem;
-        }
 
-    .inputs {
+    .add_button {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        padding-left: 12px;
+        margin-top: .5rem;
+    }
+
+    .add_button button {
+        color: #FFFFFF;
+        background-color: #095079;
+        border-color: #095079;
+        border: none;
+        border-radius: 4px;
+        padding: 8px 36px;
+        box-shadow: 0px 0px 10px 5px rgba(12, 12, 12, 0.205);
 
     }
-}
-}
+
+    .add_button button:hover {
+        background-color: black;
+    }
+
+    @media only screen and (max-width: 1150px) {
+        .application {
+            padding: 1rem;
+
+            .heading {
+                font-size: 18px;
+                padding-bottom: .2rem;
+
+            }
+
+            .f-text {
+                font-size: 10px;
+
+            }
+
+        }
+
+        .inputs {
+            padding: .7rem;
+            gap: .4rem;
+
+            .input_box {
+                gap: .1rem;
+            }
+
+            input {
+                padding: 0.4rem .3rem;
+                padding-left: .5rem;
+                font-size: .5rem;
+                width: 15rem;
+
+            }
+
+            ::-webkit-input-placeholder {
+                font-size: .6rem;
+            }
+        }
+
+        .add_button {
+            gap: .3rem;
+        }
+
+        .add_button button {
+            padding: 4px 26px;
+
+        }
+
+    }
+
+    @media only screen and (max-width: 700px) {
+        .add_application {
+            height: 80vh;
+        }
+
+        .application {
+            padding: .8rem;
+
+            .heading {
+                font-size: 15px;
+                padding-bottom: .2rem;
+            }
+
+            .inputs {
+                display: flex;
+                flex-direction: column;
+
+            }
+        }
+    }
 }

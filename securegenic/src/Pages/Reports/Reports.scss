@@ -9,6 +9,11 @@
     flex-wrap: wrap;
     gap: 1rem;
 }
+.r_logo img{
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+    border-radius: 9px;
+
+}
 .r-card{
     width: 33%;
     padding: 10px 15px;
@@ -18,15 +23,19 @@
     align-items: center;
     border-radius: 10px;
     border: 1px solid rgb(204 204 204 / 68%);
-    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.205);
+    // box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.205);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+
 
     position: relative;
 }
 .android_logo img{
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
     border: 1px solid #ccc;
     border-radius: 100px;
     padding: 3px;
     width: 22px;
+
 }
 .r_icon{
     position: absolute;
@@ -34,6 +43,7 @@
     right: 14px;
     font-size: 1.25rem;
     color: #B5B5C3;
+    
 }
 .r_content{
     padding: 10px;

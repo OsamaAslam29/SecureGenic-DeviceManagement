@@ -23,17 +23,21 @@
       padding: 30px 30px 20px 30px;
       width: 335px;
       border-radius: 15px;
-      
-    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.205);
+      // box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.205);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+
       @media (max-width: 990px) {
         width: 90%;
       }
+
       @media (max-width: 460px) {
         padding-right: 10px;
       }
 
       .card_img {
         position: relative;
+
+
         img {
           @media (max-width: 460px) {
             width: 60px;
@@ -45,6 +49,7 @@
           left: 26px;
           top: 28px;
           font-size: 15px;
+
           @media (max-width: 460px) {
             font-size: 12px;
             left: 18px;
@@ -65,6 +70,7 @@
 
         b {
           font-size: 15px;
+
           @media (max-width: 460px) {
             font-size: 14px;
           }
@@ -80,74 +86,75 @@
 
 
 }
-  
-  
-  .main_model {
-    width: 100%;
-    background-color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 250px;
-    border-radius: 7px;
-    position: relative;
-   
-  
-    .model_title {
-      font-size: 20px;
-      padding-top: 30px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #ebedf3;
-    }
-  
-    .group {
-      display: flex;
-      flex-direction: column;
-      padding-top: 5px;
-  
-      input {
-        width: 350px;
-        outline: none;
-        border: 1px solid #ebedf3;
-        border-radius: 4px;
-        height: 35px;
-        margin-top: 5px;
-        padding-left: 10px;
-        font-size: 12px;
-  @media(max-width:730px){
-    width: 100%;
+
+
+.main_model {
+  width: 100%;
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 250px;
+  border-radius: 7px;
+  position: relative;
+
+
+  .model_title {
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ebedf3;
   }
-  
+
+  .group {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+
+    input {
+      width: 350px;
+      outline: none;
+      border: 1px solid #ebedf3;
+      border-radius: 4px;
+      height: 35px;
+      margin-top: 5px;
+      padding-left: 10px;
+      font-size: 12px;
+
+      @media(max-width:730px) {
+        width: 100%;
       }
+
     }
-  
-    .buttons {
-      margin-top: 20px;
-      display: flex;
-      gap: 10px;
-      background-color: #ebedf3;
-  
-      button {
-        font-weight: 400;
-        font-size: 14px;
-        font-family: "SourceSansVariable-Roman";
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-    }
-  
-    .cross {
-      position: absolute;
-      top: 30px;
-      right: 30px;
-      color: grey;
+  }
+
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    background-color: #ebedf3;
+
+    button {
+      font-weight: 400;
+      font-size: 14px;
+      font-family: "SourceSansVariable-Roman";
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border: none;
+      border-radius: 5px;
       cursor: pointer;
     }
   }
+
+  .cross {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: grey;
+    cursor: pointer;
+  }
+}
 
 
 
@@ -156,24 +163,22 @@
   display: none;
 }
 
-.ant-modal{
+.ant-modal {
   width: 60% !important;
 
-  @media(max-width:500px){
+  @media(max-width:500px) {
     width: 80% !important;
   }
 }
-.ant-modal-footer{
+
+.ant-modal-footer {
   display: none;
 }
 
-.ant-modal-body{
-padding: unset;
+.ant-modal-body {
+  padding: unset;
 }
 
-.ant-modal-close-x{
+.ant-modal-close-x {
   display: none !important;
 }
-
-
-

@@ -6,6 +6,7 @@ import Navbar from '../../Components/Navbar/Navbar'
 import DashBoard from '../DashBoard/DashBoard'
 import Location from '../Location/Location'
 import Reports from '../Reports/Reports'
+import Privacy from '../PrivacyPolicy/Privacy'
 import DeepDive from '../DeepDive/DeepDive'
 import EnrollDevices from '../EnrollDevices/EnrollDevices'
 import Device from '../Devices/Device'
@@ -43,7 +44,7 @@ const Home = () => {
           <Route path="/Administration" component={Administration} />
           <Route path="/DeviceHealth" component={DeviceHealth} />
           <Route path="/Reports" component={Reports} />
-          <Route path="/PrivacyPolicy" component={Reports} />
+          <Route path="/PrivacyPolicy" component={Privacy} />
           <Route path="/Group" component={Group} />
           <Route path="/Addgroup" component={Addgroup} />
           <Route path="/Pushgroup" component={Pushgroup} />
